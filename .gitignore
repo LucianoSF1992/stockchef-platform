@@ -1,0 +1,38 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Build
+bin/
+obj/
+dist/
+build/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+TestResults/
+
+# Docker
+*.tar
