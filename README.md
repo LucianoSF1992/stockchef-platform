@@ -53,40 +53,43 @@ O projeto será construído com foco em organização, escalabilidade e manuteni
 - Logs estruturados
 - Health Checks
 
-## Estrutura inicial prevista
+---
+
+## 🧱 Estrutura do Projeto
 
 ```text
 stockchef-platform/
-├── backend/
-├── frontend/
-├── docs/
-└── README.md
+├── backend/        → API .NET (Clean Architecture)
+├── frontend/       → Aplicação Angular
+├── docs/           → Documentação técnica e arquitetura
+└── README.md       → Documentação principal
 ```
 
+🚀 Diferenciais Técnicos
 
-Diferenciais técnicos planejados
+Este projeto foi projetado para refletir um ambiente corporativo real, adotando práticas modernas de engenharia de software:
 
-Clean Architecture
+🧩 Clean Architecture
 
-Boas práticas de DDD
+🏗️ Boas práticas de DDD (Domain-Driven Design)
 
-CQRS em fluxos estratégicos
+⚡ CQRS em fluxos estratégicos
 
-Mensageria orientada a eventos
+🔄 Mensageria orientada a eventos
 
-Auditoria completa
+🕵️ Auditoria completa de operações
 
-Observabilidade com métricas e logs
+📊 Observabilidade com métricas e logs
 
-Testes unitários e de integração
+🧪 Testes unitários e de integração
 
-Pipeline de integração contínua
+⚙️ Pipeline de integração contínua (CI/CD)
 
-Documentação técnica de arquitetura
+📚 Documentação técnica de arquitetura
 
-Status do projeto
+📌 Status do Projeto
 
-🚧 Em planejamento e estruturação inicial.
+🚧 Em planejamento e estruturação inicial
 
 ## Roadmap do Projeto
 
