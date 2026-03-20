@@ -168,12 +168,27 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 
 ![Progresso](https://img.shields.io/badge/progress-5%25-blue)
 
-Motivação
+---
 
-Este projeto foi concebido para compor portfólio profissional de alto nível, demonstrando capacidade de desenvolvimento de sistemas corporativos complexos com foco em arquitetura, escalabilidade, segurança, integração e qualidade de código.
+## 🎯 Motivação
 
-Autor
+Este projeto foi concebido para compor um portfólio profissional de alto nível, demonstrando capacidade de desenvolver sistemas corporativos complexos com foco em:
 
-Luciano Silva Ferreira
-LinkedIn
-GitHub
+- arquitetura de software
+- escalabilidade
+- segurança
+- integração entre sistemas
+- observabilidade
+- qualidade de código
+
+A proposta é simular um ambiente real de desenvolvimento, aplicando práticas modernas de engenharia de software e construção de soluções enterprise com .NET e Angular.
+
+---
+
+## 👨‍💻 Autor
+
+**Luciano Silva Ferreira**
+
+[![Portfólio](https://img.shields.io/badge/Portfólio-Visitar-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://lucianoferreiradev.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/lucianoferreira92)
+[![GitHub](https://img.shields.io/badge/GitHub-Repositório-black?style=for-the-badge&logo=github)](https://github.com/LucianoSF1992)
