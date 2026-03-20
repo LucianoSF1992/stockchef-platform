@@ -61,6 +61,8 @@ stockchef-platform/
 ├── frontend/
 ├── docs/
 └── README.md
+```
+
 
 Diferenciais técnicos planejados
 
@@ -86,50 +88,85 @@ Status do projeto
 
 🚧 Em planejamento e estruturação inicial.
 
-Roadmap inicial
-Fase 1
+## Roadmap do Projeto
 
-Estrutura do repositório
+A evolução do projeto será organizada em fases, com acompanhamento de progresso diretamente neste README.
 
-README inicial
+---
 
-Definição da arquitetura
+### 🚀 Fase 1 — Fundação do Projeto
+- [x] Criação do repositório
+- [x] README inicial
+- [x] Estrutura base (backend, frontend, docs)
+- [ ] Criação da solution .NET
+- [ ] Estrutura inicial da API
+- [ ] Criação do projeto Angular
+- [ ] Configuração Docker inicial
 
-Criação da solution backend
+---
 
-Criação do projeto Angular
+### 🧱 Fase 2 — Core do Sistema
+- [ ] Autenticação e autorização (JWT)
+- [ ] Cadastro de empresas e unidades
+- [ ] Cadastro de produtos e categorias
+- [ ] Cadastro de fornecedores
+- [ ] Módulo de estoque
+- [ ] Movimentações de estoque
+- [ ] Auditoria de operações
 
-Fase 2
+---
 
-Autenticação e autorização
+### 🏢 Fase 3 — Funcionalidades Empresariais
+- [ ] Compras e pedidos
+- [ ] Recebimento de mercadorias
+- [ ] Inventário de estoque
+- [ ] Transferência entre unidades
+- [ ] Controle de perdas
+- [ ] Alertas operacionais
 
-Cadastro de unidades
+---
 
-Cadastro de produtos e fornecedores
+### 📊 Fase 4 — Inteligência e Automação
+- [ ] Fichas técnicas (receitas)
+- [ ] Baixa automática de insumos
+- [ ] Dashboard gerencial
+- [ ] Indicadores de estoque
+- [ ] Cache com Redis
 
-Módulo de estoque e movimentações
+---
 
-Fase 3
+### ⚙️ Fase 5 — Arquitetura Avançada
+- [ ] Implementação de mensageria (Kafka)
+- [ ] Eventos de domínio
+- [ ] Workers/consumers
+- [ ] Outbox Pattern
+- [ ] Processamento assíncrono
 
-Compras e recebimento
+---
 
-Inventário
+### 📈 Fase 6 — Observabilidade e Qualidade
+- [ ] Logs estruturados (Serilog)
+- [ ] Métricas com Prometheus
+- [ ] Dashboard com Grafana
+- [ ] Health checks
+- [ ] Testes unitários
+- [ ] Testes de integração
 
-Controle de perdas
+---
 
-Dashboard operacional
+### 🚀 Fase 7 — DevOps e Finalização
+- [ ] Docker completo
+- [ ] Docker Compose
+- [ ] Pipeline CI/CD
+- [ ] Documentação técnica
+- [ ] Diagramas de arquitetura
+- [ ] Ajustes finais para portfólio
 
-Fase 4
+---
 
-Fichas técnicas
+## Progresso geral
 
-Baixa automática por receita
-
-Mensageria
-
-Observabilidade
-
-CI/CD
+![Progresso](https://img.shields.io/badge/progress-5%25-blue)
 
 Motivação
 
