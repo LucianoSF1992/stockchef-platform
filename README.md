@@ -101,8 +101,8 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 - [x] Criação do repositório
 - [x] README inicial
 - [x] Estrutura base (backend, frontend, docs)
-- [ ] Criação da solution .NET
-- [ ] Estrutura inicial da API
+- [X] Criação da solution .NET
+- [X] Estrutura inicial da API
 - [ ] Criação do projeto Angular
 - [ ] Configuração Docker inicial
 
