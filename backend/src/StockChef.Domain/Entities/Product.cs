@@ -2,8 +2,8 @@ namespace StockChef.Domain.Entities;
 
 public class Product : BaseEntity
 {
-    public string Name { get; private set; }
-    public string Description { get; private set; }
+    public string Name { get; private set; } = null!;
+    public string Description { get; private set; } = null!;
     public decimal UnitPrice { get; private set; }
     public bool IsActive { get; private set; }
 
