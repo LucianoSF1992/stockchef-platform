@@ -104,11 +104,24 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 - [X] Criação da solution .NET
 - [X] Estrutura inicial da API
 - [X] Criação do projeto Angular
-- [ ] Configuração Docker inicial
 
 ---
 
-### 🧱 Fase 2 — Core do Sistema
+### 🚀 Fase 2 — Arquitetura e Fundação Técnica
+
+- [ ] Implementação da Clean Architecture
+- [ ] Separação em camadas:
+  - Domain
+  - Application
+  - Infrastructure
+  - API
+- [ ] Configuração do MediatR (base CQRS)
+- [ ] Configuração do DbContext
+- [ ] Configuração de Injeção de Dependência (DI)
+- [ ] Configuração de logging básico
+- [ ] Padronização de responses (Result Pattern ou similar)
+
+### 🧱 Fase 3 — Core do Sistema
 - [ ] Autenticação e autorização (JWT)
 - [ ] Cadastro de empresas e unidades
 - [ ] Cadastro de produtos e categorias
@@ -119,7 +132,7 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 
 ---
 
-### 🏢 Fase 3 — Funcionalidades Empresariais
+### 🏢 Fase 4 — Funcionalidades Empresariais
 - [ ] Compras e pedidos
 - [ ] Recebimento de mercadorias
 - [ ] Inventário de estoque
@@ -129,7 +142,7 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 
 ---
 
-### 📊 Fase 4 — Inteligência e Automação
+### 📊 Fase 5 — Inteligência e Automação
 - [ ] Fichas técnicas (receitas)
 - [ ] Baixa automática de insumos
 - [ ] Dashboard gerencial
@@ -138,7 +151,7 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 
 ---
 
-### ⚙️ Fase 5 — Arquitetura Avançada
+### ⚙️ Fase 6 — Arquitetura Avançada
 - [ ] Implementação de mensageria (Kafka)
 - [ ] Eventos de domínio
 - [ ] Workers/consumers
@@ -147,7 +160,7 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 
 ---
 
-### 📈 Fase 6 — Observabilidade e Qualidade
+### 📈 Fase 7 — Observabilidade e Qualidade
 - [ ] Logs estruturados (Serilog)
 - [ ] Métricas com Prometheus
 - [ ] Dashboard com Grafana
@@ -157,8 +170,8 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 
 ---
 
-### 🚀 Fase 7 — DevOps e Finalização
-- [ ] Docker completo
+### 🚀 Fase 8 — DevOps e Finalização
+- [ ] Docker
 - [ ] Docker Compose
 - [ ] Pipeline CI/CD
 - [ ] Documentação técnica
@@ -169,7 +182,7 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 
 ## Progresso geral
 
-![Progresso](https://img.shields.io/badge/progress-5%25-blue)
+![Progresso](https://img.shields.io/badge/progress-13%25-blue)
 
 ---
 
