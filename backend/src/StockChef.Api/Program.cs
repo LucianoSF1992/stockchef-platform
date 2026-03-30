@@ -1,5 +1,9 @@
 using MediatR;
 using StockChef.Application.Features.Products.Commands;
+using Microsoft.EntityFrameworkCore;
+using StockChef.Application.Interfaces;
+using StockChef.Infrastructure.Persistence;
+using StockChef.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +13,11 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(CreateProductHandler).Assembly));
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer("Server=localhost;Database=StockChefDb;Trusted_Connection=True;TrustServerCertificate=True"));
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
