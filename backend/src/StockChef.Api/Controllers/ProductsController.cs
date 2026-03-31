@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using StockChef.Application.Features.Products.Commands;
+using StockChef.Application.Common;
 
 namespace StockChef.Api.Controllers;
 

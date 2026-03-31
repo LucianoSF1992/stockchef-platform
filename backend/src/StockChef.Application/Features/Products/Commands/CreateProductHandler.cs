@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using StockChef.Application.DTOs;
 using StockChef.Application.Interfaces;
 using StockChef.Domain.Entities;
+using StockChef.Application.Common;
 
 namespace StockChef.Application.Features.Products.Commands;
 

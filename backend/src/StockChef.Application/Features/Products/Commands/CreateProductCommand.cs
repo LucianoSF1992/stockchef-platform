@@ -1,5 +1,6 @@
 using MediatR;
 using StockChef.Application.DTOs;
+using StockChef.Application.Common;
 
 namespace StockChef.Application.Features.Products.Commands;
 
