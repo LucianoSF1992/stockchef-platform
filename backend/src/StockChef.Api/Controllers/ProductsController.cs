@@ -2,6 +2,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using StockChef.Application.Features.Products.Commands;
 using StockChef.Application.Common;
+using StockChef.Application.Features.Products.Queries;
 
 namespace StockChef.Api.Controllers;
 
@@ -16,6 +17,17 @@ public class ProductsController : ControllerBase
     {
         _mediator = mediator;
         _logger = logger;
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(Guid id)
+    {
+        var result = await _mediator.Send(new GetProductByIdQuery(id));
+
+        if (result is null)
+            return NotFound();
+
+        return Ok(result);
     }
 
     [HttpPost]
