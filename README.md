@@ -119,7 +119,7 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 - [X] Configuração do DbContext
 - [X] Configuração de Injeção de Dependência (DI)
 - [X] Configuração de logging básico
-- [ ] Padronização de responses (Result Pattern ou similar)
+- [X] Padronização de responses (Result Pattern ou similar)
 
 ### 🧱 Fase 3 — Core do Sistema
 - [ ] Autenticação e autorização (JWT)

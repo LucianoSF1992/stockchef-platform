@@ -20,12 +20,11 @@ public class ProductsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create(CreateProductCommand command)
     {
-        _logger.LogInformation("Creating product: {Name}", command.Name);
-
         var result = await _mediator.Send(command);
 
-        _logger.LogInformation("Product created with Id: {Id}", result.Id);
+        if (!result.Success)
+            return BadRequest(result);
 
-        return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+        return CreatedAtAction(nameof(GetById), new { id = result.Data!.Id }, result);
     }
 }
