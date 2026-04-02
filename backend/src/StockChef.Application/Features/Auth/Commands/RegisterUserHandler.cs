@@ -15,10 +15,10 @@ public class RegisterUserHandler : IRequestHandler<RegisterUserCommand, Result<A
     private readonly ILogger<RegisterUserHandler> _logger;
 
     public RegisterUserHandler(
-    IUserRepository userRepository,
-    IRefreshTokenRepository refreshTokenRepository,
-    IJwtService jwtService,
-    ILogger<RegisterUserHandler> logger)
+        IUserRepository userRepository,
+        IRefreshTokenRepository refreshTokenRepository,
+        IJwtService jwtService,
+        ILogger<RegisterUserHandler> logger)
     {
         _userRepository = userRepository;
         _refreshTokenRepository = refreshTokenRepository;
@@ -31,7 +31,10 @@ public class RegisterUserHandler : IRequestHandler<RegisterUserCommand, Result<A
         var existingUser = await _userRepository.GetByEmailAsync(request.Email);
 
         if (existingUser != null)
+        {
+            _logger.LogWarning("User already exists with email: {Email}", request.Email);
             return Result<AuthResponseDto>.Failure("Email already exists");
+        }
 
         var passwordHash = PasswordHasher.Hash(request.Password);
 
@@ -39,19 +42,11 @@ public class RegisterUserHandler : IRequestHandler<RegisterUserCommand, Result<A
 
         await _userRepository.AddAsync(user);
 
-        await _refreshTokenRepository.AddAsync(new RefreshToken
-        {
-            Token = refreshToken,
-            UserId = user.Id,
-            ExpiresAt = DateTime.UtcNow.AddDays(7)
-        });
-        
-        await _context.SaveChangesAsync();
-
+        // ✅ DECLARADO CORRETAMENTE
         var accessToken = _jwtService.GenerateToken(user.Id, user.Email);
         var refreshToken = _jwtService.GenerateRefreshToken();
 
-        await _context.RefreshTokens.AddAsync(new RefreshToken
+        await _refreshTokenRepository.AddAsync(new RefreshToken
         {
             Id = Guid.NewGuid(),
             Token = refreshToken,
@@ -59,7 +54,7 @@ public class RegisterUserHandler : IRequestHandler<RegisterUserCommand, Result<A
             ExpiresAt = DateTime.UtcNow.AddDays(7)
         });
 
-        await _context.SaveChangesAsync();
+        _logger.LogInformation("User registered successfully: {Email}", user.Email);
 
         return Result<AuthResponseDto>.Ok(new AuthResponseDto
         {
