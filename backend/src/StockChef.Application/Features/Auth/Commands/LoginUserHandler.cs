@@ -3,36 +3,43 @@ using Microsoft.Extensions.Logging;
 using StockChef.Application.Common;
 using StockChef.Application.Features.Auth.DTOs;
 using StockChef.Application.Interfaces;
+using StockChef.Domain.Entities;
 
 namespace StockChef.Application.Features.Auth.Commands;
 
 public class LoginUserHandler : IRequestHandler<LoginUserCommand, Result<AuthResponseDto>>
 {
+    private readonly IUserRepository _userRepository;
+    private readonly IRefreshTokenRepository _refreshTokenRepository;
     private readonly IJwtService _jwtService;
     private readonly ILogger<LoginUserHandler> _logger;
 
     public LoginUserHandler(
-        AppDbContext context,
+        IUserRepository userRepository,
+        IRefreshTokenRepository refreshTokenRepository,
         IJwtService jwtService,
         ILogger<LoginUserHandler> logger)
     {
-        _context = context;
+        _userRepository = userRepository;
+        _refreshTokenRepository = refreshTokenRepository;
         _jwtService = jwtService;
         _logger = logger;
     }
 
     public async Task<Result<AuthResponseDto>> Handle(LoginUserCommand request, CancellationToken cancellationToken)
     {
-        var user = await _context.Users
-            .FirstOrDefaultAsync(u => u.Email == request.Email);
+        var user = await _userRepository.GetByEmailAsync(request.Email);
 
         if (user is null || !PasswordHasher.Verify(request.Password, user.PasswordHash))
+        {
+            _logger.LogWarning("Invalid login attempt for email: {Email}", request.Email);
             return Result<AuthResponseDto>.Failure("Invalid credentials");
+        }
 
         var accessToken = _jwtService.GenerateToken(user.Id, user.Email);
         var refreshToken = _jwtService.GenerateRefreshToken();
 
-        await _context.RefreshTokens.AddAsync(new RefreshToken
+        await _refreshTokenRepository.AddAsync(new RefreshToken
         {
             Id = Guid.NewGuid(),
             Token = refreshToken,
@@ -40,7 +47,7 @@ public class LoginUserHandler : IRequestHandler<LoginUserCommand, Result<AuthRes
             ExpiresAt = DateTime.UtcNow.AddDays(7)
         });
 
-        await _context.SaveChangesAsync();
+        _logger.LogInformation("User logged in successfully: {Email}", user.Email);
 
         return Result<AuthResponseDto>.Ok(new AuthResponseDto
         {
