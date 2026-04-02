@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using StockChef.Application.Features.Auth.Commands;
+using Microsoft.AspNetCore.Authorization;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -13,6 +14,7 @@ public class AuthController : ControllerBase
         _mediator = mediator;
     }
 
+    [AllowAnonymous]
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterUserCommand command)
     {
@@ -24,6 +26,7 @@ public class AuthController : ControllerBase
         return Ok(result);
     }
 
+    [AllowAnonymous]
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginUserCommand command)
     {

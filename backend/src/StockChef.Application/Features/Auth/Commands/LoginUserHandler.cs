@@ -1,16 +1,13 @@
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StockChef.Application.Common;
 using StockChef.Application.Features.Auth.DTOs;
 using StockChef.Application.Interfaces;
-using StockChef.Infrastructure.Persistence;
 
 namespace StockChef.Application.Features.Auth.Commands;
 
 public class LoginUserHandler : IRequestHandler<LoginUserCommand, Result<AuthResponseDto>>
 {
-    private readonly AppDbContext _context;
     private readonly IJwtService _jwtService;
     private readonly ILogger<LoginUserHandler> _logger;
 

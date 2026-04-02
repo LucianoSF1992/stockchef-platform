@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using StockChef.Application.Features.Products.Commands;
 using StockChef.Application.Common;
 using StockChef.Application.Features.Products.Queries;
+using Microsoft.AspNetCore.Authorization;
 
 namespace StockChef.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize] // 🔐 PROTEGE TUDO
 public class ProductsController : ControllerBase
 {
     private readonly IMediator _mediator;
