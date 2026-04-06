@@ -122,7 +122,7 @@ A evolução do projeto será organizada em fases, com acompanhamento de progres
 - [X] Padronização de responses (Result Pattern ou similar)
 
 ### 🧱 Fase 3 — Core do Sistema
-- [ ] Autenticação e autorização (JWT)
+- [X] Autenticação e autorização (JWT)
 - [ ] Cadastro de empresas e unidades
 - [ ] Cadastro de produtos e categorias
 - [ ] Cadastro de fornecedores
