@@ -1,6 +1,7 @@
 using StockChef.Application.Interfaces;
 using StockChef.Domain.Entities;
 using StockChef.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 public class RefreshTokenRepository : IRefreshTokenRepository
 {
