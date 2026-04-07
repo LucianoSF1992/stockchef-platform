@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using StockChef.Application.Common;
 using StockChef.Application.Features.Auth.DTOs;
 using StockChef.Application.Interfaces;
+using StockChef.Domain.Entities;
 
 public class RefreshTokenHandler : IRequestHandler<RefreshTokenCommand, Result<AuthResponseDto>>
 {
@@ -44,7 +45,7 @@ public class RefreshTokenHandler : IRequestHandler<RefreshTokenCommand, Result<A
         var newAccessToken = _jwtService.GenerateToken(user.Id, user.Email);
         var newRefreshToken = _jwtService.GenerateRefreshToken();
 
-        await _refreshTokenRepository.AddAsync(new Domain.Entities.RefreshToken
+        await _refreshTokenRepository.AddAsync(new RefreshToken
         {
             Id = Guid.NewGuid(),
             Token = newRefreshToken,
