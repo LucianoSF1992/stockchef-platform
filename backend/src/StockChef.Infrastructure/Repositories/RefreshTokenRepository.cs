@@ -11,9 +11,21 @@ public class RefreshTokenRepository : IRefreshTokenRepository
         _context = context;
     }
 
+    public async Task<RefreshToken?> GetByTokenAsync(string token)
+    {
+        return await _context.RefreshTokens
+            .FirstOrDefaultAsync(x => x.Token == token);
+    }
+
     public async Task AddAsync(RefreshToken token)
     {
         await _context.RefreshTokens.AddAsync(token);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task DeleteAsync(RefreshToken token)
+    {
+        _context.RefreshTokens.Remove(token);
         await _context.SaveChangesAsync();
     }
 }
