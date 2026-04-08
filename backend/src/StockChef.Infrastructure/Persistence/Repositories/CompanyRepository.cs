@@ -1,3 +1,4 @@
+namespace StockChef.Infrastructure.Persistence;
 public class CompanyRepository : ICompanyRepository
 {
     private readonly AppDbContext _context;
