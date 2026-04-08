@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 namespace StockChef.Infrastructure.Persistence;
 public class CompanyRepository : ICompanyRepository
 {
