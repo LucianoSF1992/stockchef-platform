@@ -4,7 +4,7 @@ public class Unit
     public string Name { get; private set; }
 
     public Guid CompanyId { get; private set; }
-    public Company Company { get; private set; }
+    public Company Company { get; private set; } = null!;
 
     public Unit(string name, Guid companyId)
     {
