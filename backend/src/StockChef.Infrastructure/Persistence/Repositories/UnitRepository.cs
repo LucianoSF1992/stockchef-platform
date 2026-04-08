@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using StockChef.Infrastructure.Persistence;
+using StockChef.Domain.Entities;
+
 public class UnitRepository : IUnitRepository
 {
     private readonly AppDbContext _context;
