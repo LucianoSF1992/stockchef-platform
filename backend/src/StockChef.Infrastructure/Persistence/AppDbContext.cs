@@ -22,6 +22,8 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
+        modelBuilder.Entity<Company>().ToTable("Company");
+
         modelBuilder.Entity<Company>()
             .HasMany(c => c.Units)
             .WithOne(u => u.Company)
