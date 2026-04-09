@@ -22,7 +22,9 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<Company>().ToTable("Company");
+        modelBuilder.Entity<Product>()
+    .Property(p => p.UnitPrice)
+    .HasPrecision(18, 2);
 
         modelBuilder.Entity<Company>()
             .HasMany(c => c.Units)

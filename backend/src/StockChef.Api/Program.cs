@@ -24,7 +24,7 @@ builder.Services.AddMediatR(cfg =>
 
 // EF Core
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer("Server=localhost;Database=StockChefDb;Trusted_Connection=True;TrustServerCertificate=True"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // DI
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
