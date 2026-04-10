@@ -23,12 +23,23 @@ public class AppDbContext : DbContext
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<Product>()
-    .Property(p => p.UnitPrice)
-    .HasPrecision(18, 2);
+            .Property(p => p.UnitPrice)
+            .HasPrecision(18, 2);
 
         modelBuilder.Entity<Company>()
+            .ToTable("Company")
             .HasMany(c => c.Units)
             .WithOne(u => u.Company)
             .HasForeignKey(u => u.CompanyId);
+
+        // (opcional, mas recomendado padronizar)
+        modelBuilder.Entity<Unit>()
+            .ToTable("Units");
+
+        modelBuilder.Entity<Product>()
+            .ToTable("Products");
+
+        modelBuilder.Entity<User>()
+            .ToTable("Users");
     }
 }
