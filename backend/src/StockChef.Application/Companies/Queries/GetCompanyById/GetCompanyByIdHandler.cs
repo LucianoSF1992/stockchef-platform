@@ -1,6 +1,6 @@
 using MediatR;
 
-public class GetCompanyByIdHandler : IRequestHandler<GetCompanyByIdQuery, Company>
+public class GetCompanyByIdHandler : IRequestHandler<GetCompanyByIdQuery, Company?>
 {
     private readonly ICompanyRepository _repository;
 
