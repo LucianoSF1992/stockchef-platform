@@ -25,8 +25,6 @@ public class CompanyRepository : ICompanyRepository
 
     public async Task<List<Company>> GetAllAsync()
     {
-        return await _context.Companies
-            .Include(c => c.Units)
-            .ToListAsync();
+        return await _context.Companies.ToListAsync();
     }
 }

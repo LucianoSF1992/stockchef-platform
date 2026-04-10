@@ -1,4 +1,5 @@
 using MediatR;
+using StockChef.Domain;
 
 public class GetAllCompaniesHandler : IRequestHandler<GetAllCompaniesQuery, List<Company>>
 {
