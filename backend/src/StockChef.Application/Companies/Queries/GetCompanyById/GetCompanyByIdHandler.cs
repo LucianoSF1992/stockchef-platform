@@ -9,7 +9,7 @@ public class GetCompanyByIdHandler : IRequestHandler<GetCompanyByIdQuery, Compan
         _repository = repository;
     }
 
-    public async Task<Company> Handle(GetCompanyByIdQuery request, CancellationToken cancellationToken)
+    public async Task<Company?> Handle(GetCompanyByIdQuery request, CancellationToken cancellationToken)
     {
         return await _repository.GetByIdAsync(request.Id);
     }
