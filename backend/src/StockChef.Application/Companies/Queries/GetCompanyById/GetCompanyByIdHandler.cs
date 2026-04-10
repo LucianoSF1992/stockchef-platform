@@ -1,6 +1,6 @@
 using MediatR;
 
-public class GetCompanyByIdHandler : IRequestHandler<GetCompanyByIdQuery, Company?>
+public class GetCompanyByIdHandler : IRequestHandler<GetCompanyByIdQuery, CompanyDto?>
 {
     private readonly ICompanyRepository _repository;
 
@@ -9,8 +9,13 @@ public class GetCompanyByIdHandler : IRequestHandler<GetCompanyByIdQuery, Compan
         _repository = repository;
     }
 
-    public async Task<Company?> Handle(GetCompanyByIdQuery request, CancellationToken cancellationToken)
+    public async Task<CompanyDto?> Handle(GetCompanyByIdQuery request, CancellationToken cancellationToken)
     {
-        return await _repository.GetByIdAsync(request.Id);
+        var company = await _repository.GetByIdAsync(request.Id);
+
+        if (company is null)
+            return null;
+
+        return CompanyMapper.ToDto(company);
     }
 }

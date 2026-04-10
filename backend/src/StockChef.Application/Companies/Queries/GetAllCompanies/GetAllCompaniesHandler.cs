@@ -1,7 +1,7 @@
 using MediatR;
 using StockChef.Domain;
 
-public class GetAllCompaniesHandler : IRequestHandler<GetAllCompaniesQuery, List<Company>>
+public class GetAllCompaniesHandler : IRequestHandler<GetAllCompaniesQuery, List<CompanyDto>>
 {
     private readonly ICompanyRepository _repository;
 
@@ -10,8 +10,10 @@ public class GetAllCompaniesHandler : IRequestHandler<GetAllCompaniesQuery, List
         _repository = repository;
     }
 
-    public async Task<List<Company>> Handle(GetAllCompaniesQuery request, CancellationToken cancellationToken)
+    public async Task<List<CompanyDto>> Handle(GetAllCompaniesQuery request, CancellationToken cancellationToken)
     {
-        return await _repository.GetAllAsync();
+        var companies = await _repository.GetAllAsync();
+
+        return companies.Select(CompanyMapper.ToDto).ToList();
     }
 }
