@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 namespace StockChef.Infrastructure.Persistence;
+
 public class CompanyRepository : ICompanyRepository
 {
     private readonly AppDbContext _context;
@@ -20,5 +21,12 @@ public class CompanyRepository : ICompanyRepository
         return await _context.Companies
             .Include(c => c.Units)
             .FirstOrDefaultAsync(c => c.Id == id);
+    }
+
+    public async Task<List<Company>> GetAllAsync()
+    {
+        return await _context.Companies
+            .Include(c => c.Units)
+            .ToListAsync();
     }
 }
