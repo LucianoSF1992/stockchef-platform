@@ -8,7 +8,14 @@ public static class CompanyMapper
         {
             Id = company.Id,
             Name = company.Name,
-            Document = company.Document
+            Document = company.Document,
+            Units = company.Units?
+                .Select(u => new UnitDto
+                {
+                    Id = u.Id,
+                    Name = u.Name
+                })
+                .ToList() ?? new List<UnitDto>()
         };
     }
 }
