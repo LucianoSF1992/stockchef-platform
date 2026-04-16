@@ -1,6 +1,6 @@
 using MediatR;
 
-public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand>
+public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand, Unit>
 {
     private readonly IUnitRepository _repository;
 
@@ -9,7 +9,7 @@ public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand>
         _repository = repository;
     }
 
-    public async Task Handle(UpdateUnitCommand request, CancellationToken cancellationToken)
+    public async Task<Unit> Handle(UpdateUnitCommand request, CancellationToken cancellationToken)
     {
         var unit = await _repository.GetByIdAsync(request.Id);
 
@@ -19,5 +19,7 @@ public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand>
         unit.Name = request.Name;
 
         await _repository.UpdateAsync(unit);
+
+        return Unit.Value;
     }
 }

@@ -1,2 +1,7 @@
 using MediatR;
-public record UpdateUnitCommand(Guid Id, string Name) : IRequest;
+
+public class UpdateUnitCommand : IRequest<Unit>
+{
+    public Guid Id { get; set; }
+    public string Name { get; set; }
+}
