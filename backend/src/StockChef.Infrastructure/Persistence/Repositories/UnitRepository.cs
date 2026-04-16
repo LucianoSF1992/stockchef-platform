@@ -16,4 +16,26 @@ public class UnitRepository : IUnitRepository
         await _context.Units.AddAsync(unit);
         await _context.SaveChangesAsync();
     }
+
+    public async Task<List<Unit>> GetAllAsync()
+    {
+        return await _context.Units.ToListAsync();
+    }
+
+    public async Task<Unit?> GetByIdAsync(Guid id)
+    {
+        return await _context.Units.FindAsync(id);
+    }
+
+    public async Task UpdateAsync(Unit unit)
+    {
+        _context.Units.Update(unit);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task DeleteAsync(Unit unit)
+    {
+        _context.Units.Remove(unit);
+        await _context.SaveChangesAsync();
+    }
 }

@@ -18,4 +18,34 @@ public class UnitController : ControllerBase
         var id = await _mediator.Send(command);
         return Ok(id);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        var result = await _mediator.Send(new GetAllUnitsQuery());
+        return Ok(result);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(Guid id)
+    {
+        var result = await _mediator.Send(new GetUnitByIdQuery(id));
+        return Ok(result);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(Guid id, UpdateUnitCommand command)
+    {
+        if (id != command.Id) return BadRequest();
+
+        await _mediator.Send(command);
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        await _mediator.Send(new DeleteUnitCommand(id));
+        return NoContent();
+    }
 }
