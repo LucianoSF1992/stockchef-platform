@@ -19,8 +19,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // MediatR
-builder.Services.AddMediatR(cfg =>
-    cfg.RegisterServicesFromAssembly(typeof(CreateProductHandler).Assembly));
+builder.Services.AddMediatR(typeof(Program));
 
 // EF Core
 builder.Services.AddDbContext<AppDbContext>(options =>

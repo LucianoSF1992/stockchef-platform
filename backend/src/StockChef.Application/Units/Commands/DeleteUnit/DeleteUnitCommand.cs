@@ -1,7 +1,11 @@
 using MediatR;
-using UnitMediatR = MediatR.Unit;
 
-public class DeleteUnitCommand : IRequest<UnitMediatR>
+public class DeleteUnitCommand : IRequest<Unit>
 {
     public Guid Id { get; set; }
+
+    public DeleteUnitCommand(Guid id)
+    {
+        Id = id;
+    }
 }
