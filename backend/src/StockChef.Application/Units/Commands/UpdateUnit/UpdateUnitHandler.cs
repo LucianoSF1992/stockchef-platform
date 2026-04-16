@@ -1,6 +1,6 @@
 using MediatR;
 
-public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand, UnitMediatR>
+public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand, Unit>
 {
     private readonly IUnitRepository _repository;
 
@@ -16,10 +16,10 @@ public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand, UnitMediatR>
         if (unit is null)
             throw new Exception("Unit não encontrada");
 
-        unit.Name = request.Name;
+        unit.UpdateName(request.Name);
 
         await _repository.UpdateAsync(unit);
 
-        return UnitMediatR.Value;
+        return unit;
     }
 }
