@@ -12,6 +12,9 @@ public class GetUnitByIdHandler : IRequestHandler<GetUnitByIdQuery, UnitDto>
     {
         var unit = await _repository.GetByIdAsync(request.Id);
 
+        if (unit is null)
+            throw new KeyNotFoundException("Unit não encontrada");
+
         return new UnitDto
         {
             Id = unit.Id,
