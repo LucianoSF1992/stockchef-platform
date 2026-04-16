@@ -18,6 +18,5 @@ public class DeleteUnitHandler : IRequestHandler<DeleteUnitCommand, Unit>
 
         await _repository.DeleteAsync(unit);
 
-        return Unit.Value;
-    }
+        return MediatR.Unit.Value;
 }

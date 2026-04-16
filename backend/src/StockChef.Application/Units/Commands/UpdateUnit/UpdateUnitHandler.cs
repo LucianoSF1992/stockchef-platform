@@ -20,6 +20,6 @@ public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand, Unit>
 
         await _repository.UpdateAsync(unit);
 
-        return Unit.Value;
+        return MediatR.Unit.Value;
     }
 }
