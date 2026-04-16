@@ -1,3 +1,5 @@
+using MediatR;
+
 public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand>
 {
     private readonly IUnitRepository _repository;

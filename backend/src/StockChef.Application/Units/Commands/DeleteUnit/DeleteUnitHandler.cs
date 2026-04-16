@@ -1,3 +1,5 @@
+using MediatR;
+
 public class DeleteUnitHandler : IRequestHandler<DeleteUnitCommand>
 {
     private readonly IUnitRepository _repository;
