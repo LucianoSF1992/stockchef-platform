@@ -12,4 +12,9 @@ public class Unit
         Name = name;
         CompanyId = companyId;
     }
+
+    public void UpdateName(string name)
+    {
+        Name = name;
+    }
 }
