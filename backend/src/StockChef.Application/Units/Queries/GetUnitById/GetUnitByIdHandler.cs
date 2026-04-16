@@ -1,3 +1,4 @@
+using MediatR;
 public class GetUnitByIdHandler : IRequestHandler<GetUnitByIdQuery, UnitDto>
 {
     private readonly IUnitRepository _repository;

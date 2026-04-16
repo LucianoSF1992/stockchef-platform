@@ -1,3 +1,4 @@
+using MediatR;
 public class GetAllUnitsHandler : IRequestHandler<GetAllUnitsQuery, List<UnitDto>>
 {
     private readonly IUnitRepository _repository;
