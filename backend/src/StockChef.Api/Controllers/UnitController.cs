@@ -45,7 +45,7 @@ public class UnitController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(Guid id)
     {
-        await _mediator.Send(new DeleteUnitCommand(id));
+        await _mediator.Send(new DeleteUnitCommand { Id = id });
         return NoContent();
     }
 }
