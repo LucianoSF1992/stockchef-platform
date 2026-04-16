@@ -1,6 +1,6 @@
 using MediatR;
 
-public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand, Unit>
+public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand, UnitMediatR>
 {
     private readonly IUnitRepository _repository;
 
@@ -20,6 +20,6 @@ public class UpdateUnitHandler : IRequestHandler<UpdateUnitCommand, Unit>
 
         await _repository.UpdateAsync(unit);
 
-        return MediatR.Unit.Value;
+        return UnitMediatR.Value;
     }
 }

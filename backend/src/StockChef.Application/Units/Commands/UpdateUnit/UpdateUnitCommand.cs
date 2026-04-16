@@ -1,4 +1,5 @@
 using MediatR;
+using UnitMediatR = MediatR.Unit;
 
 public class UpdateUnitCommand : IRequest<Unit>
 {

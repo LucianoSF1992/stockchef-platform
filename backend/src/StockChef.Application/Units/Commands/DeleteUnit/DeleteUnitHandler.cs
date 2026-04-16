@@ -1,6 +1,7 @@
 using MediatR;
+using UnitMediatR = MediatR.Unit;
 
-public class DeleteUnitHandler : IRequestHandler<DeleteUnitCommand, Unit>
+public class DeleteUnitHandler : IRequestHandler<DeleteUnitCommand, UnitMediatR>
 {
     private readonly IUnitRepository _repository;
 
@@ -9,7 +10,7 @@ public class DeleteUnitHandler : IRequestHandler<DeleteUnitCommand, Unit>
         _repository = repository;
     }
 
-    public async Task<Unit> Handle(DeleteUnitCommand request, CancellationToken cancellationToken)
+    public async Task<UnitMediatR> Handle(DeleteUnitCommand request, CancellationToken cancellationToken)
     {
         var unit = await _repository.GetByIdAsync(request.Id);
 
@@ -18,5 +19,6 @@ public class DeleteUnitHandler : IRequestHandler<DeleteUnitCommand, Unit>
 
         await _repository.DeleteAsync(unit);
 
-        return MediatR.Unit.Value;
+        return UnitMediatR.Value;
+    }
 }
