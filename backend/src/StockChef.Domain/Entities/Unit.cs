@@ -6,8 +6,13 @@ public class Unit
     public Guid CompanyId { get; private set; }
     public Company Company { get; private set; } = null!;
 
+    private Unit() { } // 🔥 necessário pro EF
+
     public Unit(string name, Guid companyId)
     {
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("Nome da unidade é obrigatório");
+
         Id = Guid.NewGuid();
         Name = name;
         CompanyId = companyId;
