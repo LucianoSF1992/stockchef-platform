@@ -37,7 +37,6 @@ public class AppDbContext : DbContext
             .WithOne(u => u.Company)
             .HasForeignKey(u => u.CompanyId);
 
-        // (opcional, mas recomendado padronizar)
         modelBuilder.Entity<Unit>()
             .ToTable("Units");
 
@@ -58,12 +57,13 @@ public class AppDbContext : DbContext
                 method.Invoke(this, new object[] { modelBuilder });
             }
         }
+    }
 
-        private void SetGlobalQueryFilter<TEntity>(ModelBuilder modelBuilder)
-    where TEntity : class, ICompanyEntity
+    
+    private void SetGlobalQueryFilter<TEntity>(ModelBuilder modelBuilder)
+        where TEntity : class, ICompanyEntity
     {
         modelBuilder.Entity<TEntity>()
             .HasQueryFilter(e => e.CompanyId == _currentCompanyService.GetCompanyId());
     }
-}
 }
