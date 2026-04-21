@@ -1,4 +1,4 @@
-public class Unit
+public class Unit : ICompanyEntity
 {
     public Guid Id { get; private set; }
     public string Name { get; private set; }

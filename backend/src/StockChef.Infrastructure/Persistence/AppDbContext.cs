@@ -13,9 +13,14 @@ public class AppDbContext : DbContext
     public DbSet<Company> Companies { get; set; }
     public DbSet<Unit> Units { get; set; }
 
-    public AppDbContext(DbContextOptions<AppDbContext> options)
-        : base(options)
+    private readonly ICurrentCompanyService _currentCompanyService;
+
+    public AppDbContext(
+        DbContextOptions<AppDbContext> options,
+        ICurrentCompanyService currentCompanyService
+    ) : base(options)
     {
+        _currentCompanyService = currentCompanyService;
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -41,5 +46,24 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<User>()
             .ToTable("Users");
+
+        foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+        {
+            if (typeof(ICompanyEntity).IsAssignableFrom(entityType.ClrType))
+            {
+                var method = typeof(AppDbContext)
+                    .GetMethod(nameof(SetGlobalQueryFilter), System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)!
+                    .MakeGenericMethod(entityType.ClrType);
+
+                method.Invoke(this, new object[] { modelBuilder });
+            }
+        }
+
+        private void SetGlobalQueryFilter<TEntity>(ModelBuilder modelBuilder)
+    where TEntity : class, ICompanyEntity
+    {
+        modelBuilder.Entity<TEntity>()
+            .HasQueryFilter(e => e.CompanyId == _currentCompanyService.GetCompanyId());
     }
+}
 }
