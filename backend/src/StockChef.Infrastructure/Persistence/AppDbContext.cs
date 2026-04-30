@@ -13,6 +13,8 @@ public class AppDbContext : DbContext
     public DbSet<Company> Companies { get; set; }
     public DbSet<Unit> Units { get; set; }
 
+    public DbSet<Inventory> Inventories { get; set; }
+
     private readonly ICurrentCompanyService _currentCompanyService;
 
     public AppDbContext(
@@ -59,7 +61,7 @@ public class AppDbContext : DbContext
         }
     }
 
-    
+
     private void SetGlobalQueryFilter<TEntity>(ModelBuilder modelBuilder)
         where TEntity : class, ICompanyEntity
     {
