@@ -1,0 +1,11 @@
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\bin\Debug\net9.0\StockChef.Domain.deps.json
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\bin\Debug\net9.0\StockChef.Domain.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\bin\Debug\net9.0\StockChef.Domain.pdb
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\obj\Debug\net9.0\StockChef.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\obj\Debug\net9.0\StockChef.Domain.AssemblyInfoInputs.cache
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\obj\Debug\net9.0\StockChef.Domain.AssemblyInfo.cs
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\obj\Debug\net9.0\StockChef.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\obj\Debug\net9.0\StockChef.Domain.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\obj\Debug\net9.0\refint\StockChef.Domain.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\obj\Debug\net9.0\StockChef.Domain.pdb
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Domain\obj\Debug\net9.0\ref\StockChef.Domain.dll
