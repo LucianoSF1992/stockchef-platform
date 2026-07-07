@@ -98,6 +98,14 @@ This project is being developed as part of my software engineering portfolio, fo
 
 ---
 
+## Deployment
+
+After the project completion, the application will be available at the following address:
+
+https://stockchefplatform.lucianoferreiradev.com
+
+---
+
 ## Author
 
 Developed by **Luciano Silva Ferreira**
