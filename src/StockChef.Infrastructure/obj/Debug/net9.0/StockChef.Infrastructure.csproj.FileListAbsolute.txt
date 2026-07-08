@@ -9,3 +9,10 @@ C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\sto
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\refint\StockChef.Infrastructure.dll
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\StockChef.Infrastructure.pdb
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\ref\StockChef.Infrastructure.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\bin\Debug\net9.0\StockChef.Application.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\bin\Debug\net9.0\StockChef.Domain.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\bin\Debug\net9.0\StockChef.Application.pdb
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\bin\Debug\net9.0\StockChef.Domain.pdb
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\StockChef.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\StockChef.Infrastructure.sourcelink.json
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\StockChe.F93D618D.Up2Date

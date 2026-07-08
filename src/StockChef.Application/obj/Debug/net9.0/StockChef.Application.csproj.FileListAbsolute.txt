@@ -9,3 +9,8 @@ C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\sto
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Application\obj\Debug\net9.0\refint\StockChef.Application.dll
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Application\obj\Debug\net9.0\StockChef.Application.pdb
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Application\obj\Debug\net9.0\ref\StockChef.Application.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Application\bin\Debug\net9.0\StockChef.Domain.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Application\bin\Debug\net9.0\StockChef.Domain.pdb
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Application\obj\Debug\net9.0\StockChef.Application.csproj.AssemblyReference.cache
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Application\obj\Debug\net9.0\StockChef.Application.sourcelink.json
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Application\obj\Debug\net9.0\StockChe.7A743F16.Up2Date

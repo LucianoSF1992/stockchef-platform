@@ -7,14 +7,47 @@
   "targets": {
     ".NETCoreApp,Version=v9.0": {
       "StockChef.Infrastructure/1.0.0": {
+        "dependencies": {
+          "StockChef.Application": "1.0.0",
+          "StockChef.Domain": "1.0.0"
+        },
         "runtime": {
           "StockChef.Infrastructure.dll": {}
+        }
+      },
+      "StockChef.Application/1.0.0": {
+        "dependencies": {
+          "StockChef.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StockChef.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StockChef.Domain/1.0.0": {
+        "runtime": {
+          "StockChef.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "StockChef.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StockChef.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StockChef.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -33,6 +33,43 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "StockChef.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "StockChef.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StockChef.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockChef.Application.dll": {}
+        }
+      },
+      "StockChef.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/StockChef.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockChef.Domain.dll": {}
+        }
+      },
+      "StockChef.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "StockChef.Application": "1.0.0",
+          "StockChef.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StockChef.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockChef.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -67,11 +104,28 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "StockChef.Application/1.0.0": {
+      "type": "project",
+      "path": "../StockChef.Application/StockChef.Application.csproj",
+      "msbuildProject": "../StockChef.Application/StockChef.Application.csproj"
+    },
+    "StockChef.Domain/1.0.0": {
+      "type": "project",
+      "path": "../StockChef.Domain/StockChef.Domain.csproj",
+      "msbuildProject": "../StockChef.Domain/StockChef.Domain.csproj"
+    },
+    "StockChef.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../StockChef.Infrastructure/StockChef.Infrastructure.csproj",
+      "msbuildProject": "../StockChef.Infrastructure/StockChef.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.AspNetCore.OpenApi >= 9.0.6"
+      "Microsoft.AspNetCore.OpenApi >= 9.0.6",
+      "StockChef.Application >= 1.0.0",
+      "StockChef.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -98,7 +152,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lucia\\OneDrive\\Cursos\\Curso Meu Sistema Lucrativo\\Projetos Pessoais\\stockchef-platform\\src\\StockChef.Application\\StockChef.Application.csproj": {
+              "projectPath": "C:\\Users\\lucia\\OneDrive\\Cursos\\Curso Meu Sistema Lucrativo\\Projetos Pessoais\\stockchef-platform\\src\\StockChef.Application\\StockChef.Application.csproj"
+            },
+            "C:\\Users\\lucia\\OneDrive\\Cursos\\Curso Meu Sistema Lucrativo\\Projetos Pessoais\\stockchef-platform\\src\\StockChef.Infrastructure\\StockChef.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\lucia\\OneDrive\\Cursos\\Curso Meu Sistema Lucrativo\\Projetos Pessoais\\stockchef-platform\\src\\StockChef.Infrastructure\\StockChef.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

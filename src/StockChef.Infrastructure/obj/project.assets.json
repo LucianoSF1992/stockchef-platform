@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "StockChef.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "StockChef.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StockChef.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockChef.Application.dll": {}
+        }
+      },
+      "StockChef.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/StockChef.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockChef.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "StockChef.Application/1.0.0": {
+      "type": "project",
+      "path": "../StockChef.Application/StockChef.Application.csproj",
+      "msbuildProject": "../StockChef.Application/StockChef.Application.csproj"
+    },
+    "StockChef.Domain/1.0.0": {
+      "type": "project",
+      "path": "../StockChef.Domain/StockChef.Domain.csproj",
+      "msbuildProject": "../StockChef.Domain/StockChef.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "StockChef.Application >= 1.0.0",
+      "StockChef.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\lucia\\.nuget\\packages\\": {}
@@ -31,7 +69,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lucia\\OneDrive\\Cursos\\Curso Meu Sistema Lucrativo\\Projetos Pessoais\\stockchef-platform\\src\\StockChef.Application\\StockChef.Application.csproj": {
+              "projectPath": "C:\\Users\\lucia\\OneDrive\\Cursos\\Curso Meu Sistema Lucrativo\\Projetos Pessoais\\stockchef-platform\\src\\StockChef.Application\\StockChef.Application.csproj"
+            },
+            "C:\\Users\\lucia\\OneDrive\\Cursos\\Curso Meu Sistema Lucrativo\\Projetos Pessoais\\stockchef-platform\\src\\StockChef.Domain\\StockChef.Domain.csproj": {
+              "projectPath": "C:\\Users\\lucia\\OneDrive\\Cursos\\Curso Meu Sistema Lucrativo\\Projetos Pessoais\\stockchef-platform\\src\\StockChef.Domain\\StockChef.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
