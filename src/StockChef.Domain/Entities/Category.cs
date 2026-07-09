@@ -4,7 +4,7 @@ namespace StockChef.Domain.Entities;
 
 public class Category : BaseEntity
 {
-    public string Name { get; private set; }
+    public string Name { get; private set; } = string.Empty;
 
     public string? Description { get; private set; }
 
