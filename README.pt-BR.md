@@ -91,64 +91,65 @@ tests/
 
 ## Roadmap
 
-### Project Foundation
-- [x] Repository creation
-- [x] Initial solution setup
-- [x] Clean Architecture structure
-- [x] README documentation (EN/PT-BR)
-- [x] License configuration
-- [x] Git ignore configuration
-- [x] EditorConfig configuration
+### Fundação do Projeto
+- [x] Criação do repositório
+- [x] Configuração inicial da solução
+- [x] Estrutura da Clean Architecture
+- [x] Documentação do README (EN/PT-BR)
+- [x] Configuração da licença
+- [x] Configuração do Git Ignore
+- [x] Configuração do EditorConfig
 
-### Domain Layer
-- [x] BaseEntity abstraction
-- [x] Category entity
-- [x] Nullable warnings fix
-- [x] Supplier entity
-- [x] Product entity
-- [ ] StockMovement entity
-- [ ] Domain enums
-- [ ] Value Objects
+### Camada de Domínio
+- [x] Abstração da BaseEntity
+- [x] Entidade Category
+- [x] Correção dos avisos de referências anuláveis
+- [x] Entidade Supplier
+- [x] Enum UnitOfMeasure
+- [x] Entidade Product
+- [ ] Enum StockMovementType
+- [ ] Entidade StockMovement
+- [ ] Objetos de Valor (Value Objects)
 
-### Application Layer
+### Camada de Aplicação
 - [ ] DTOs
-- [ ] Use Cases
-- [ ] Commands and Queries
-- [ ] Validators
-- [ ] Dependency Injection configuration
+- [ ] Casos de Uso
+- [ ] Commands e Queries
+- [ ] Validadores
+- [ ] Configuração da Injeção de Dependência
 
-### Infrastructure Layer
-- [ ] Entity Framework Core configuration
-- [ ] DbContext implementation
-- [ ] Entity mappings
-- [ ] Repository implementations
-- [ ] SQL Server integration
-- [ ] Initial migration
+### Camada de Infraestrutura
+- [ ] Configuração do Entity Framework Core
+- [ ] Implementação do DbContext
+- [ ] Mapeamentos das entidades
+- [ ] Implementação dos repositórios
+- [ ] Integração com SQL Server
+- [ ] Primeira Migration
 
-### API Layer
+### Camada da API
 - [ ] Controllers
-- [ ] Swagger documentation
-- [ ] Global exception handling
-- [ ] API versioning
+- [ ] Documentação Swagger
+- [ ] Tratamento global de exceções
+- [ ] Versionamento da API
 
-### Features
-- [ ] Product management
-- [ ] Category management
-- [ ] Supplier management
-- [ ] Inventory movements
-- [ ] Inventory control
+### Funcionalidades
+- [ ] Gestão de produtos
+- [ ] Gestão de categorias
+- [ ] Gestão de fornecedores
+- [ ] Movimentações de estoque
+- [ ] Controle de inventário
 - [ ] Dashboard
-- [ ] Authentication & Authorization
-- [ ] Reports
+- [ ] Autenticação e autorização
+- [ ] Relatórios
 
-### Quality
-- [ ] Unit Tests
-- [ ] Integration Tests
+### Qualidade
+- [ ] Testes unitários
+- [ ] Testes de integração
 
 ### DevOps
 - [ ] Docker
 - [ ] CI/CD
-- [ ] Cloud Deployment
+- [ ] Publicação em nuvem
 
 ---
 

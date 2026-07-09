@@ -93,9 +93,10 @@ This project is being developed as part of my software engineering portfolio, fo
 - [x] Category entity
 - [x] Nullable warnings fix
 - [x] Supplier entity
+- [x] UnitOfMeasure enum
 - [x] Product entity
+- [ ] StockMovementType enum
 - [ ] StockMovement entity
-- [ ] Domain enums
 - [ ] Value Objects
 
 ### Application Layer
