@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockChef.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a45a59a66abbcab90bf83b531204b102e25e8b69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3451c9c48f9286d5ac97d433d48dba0d3a16b92")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockChef.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockChef.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

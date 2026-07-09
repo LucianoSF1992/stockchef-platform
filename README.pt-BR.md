@@ -105,7 +105,7 @@ tests/
 - [x] Category entity
 - [x] Nullable warnings fix
 - [x] Supplier entity
-- [ ] Product entity
+- [x] Product entity
 - [ ] StockMovement entity
 - [ ] Domain enums
 - [ ] Value Objects

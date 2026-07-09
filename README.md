@@ -93,7 +93,7 @@ This project is being developed as part of my software engineering portfolio, fo
 - [x] Category entity
 - [x] Nullable warnings fix
 - [x] Supplier entity
-- [ ] Product entity
+- [x] Product entity
 - [ ] StockMovement entity
 - [ ] Domain enums
 - [ ] Value Objects
