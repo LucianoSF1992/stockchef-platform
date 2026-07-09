@@ -112,3 +112,4 @@ Developed by **Luciano Silva Ferreira**
 
 - 🌐 Portfolio: <https://www.lucianoferreiradev.com/>
 - 💼 LinkedIn: <https://www.linkedin.com/in/lucianoferreira92/>
+- 💻 GitHub: https://github.com/LucianoSF1992
