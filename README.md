@@ -79,19 +79,61 @@ This project is being developed as part of my software engineering portfolio, fo
 
 ## Roadmap
 
+### Project Foundation
 - [x] Repository creation
 - [x] Initial solution setup
-- [ ] Domain layer
-- [ ] Application layer
-- [ ] Infrastructure layer
+- [x] Clean Architecture structure
+- [x] README documentation (EN/PT-BR)
+- [x] License configuration
+- [x] Git ignore configuration
+- [x] EditorConfig configuration
+
+### Domain Layer
+- [x] BaseEntity abstraction
+- [x] Category entity
+- [x] Nullable warnings fix
+- [ ] Supplier entity
+- [ ] Product entity
+- [ ] StockMovement entity
+- [ ] Domain enums
+- [ ] Value Objects
+
+### Application Layer
+- [ ] DTOs
+- [ ] Use Cases
+- [ ] Commands and Queries
+- [ ] Validators
+- [ ] Dependency Injection configuration
+
+### Infrastructure Layer
+- [ ] Entity Framework Core configuration
+- [ ] DbContext implementation
+- [ ] Entity mappings
+- [ ] Repository implementations
+- [ ] SQL Server integration
+- [ ] Initial migration
+
+### API Layer
+- [ ] Controllers
+- [ ] Swagger documentation
+- [ ] Global exception handling
+- [ ] API versioning
+
+### Features
 - [ ] Product management
 - [ ] Category management
 - [ ] Supplier management
 - [ ] Inventory movements
-- [ ] Authentication & Authorization
+- [ ] Inventory control
 - [ ] Dashboard
+- [ ] Authentication & Authorization
+- [ ] Reports
+
+### Quality
 - [ ] Unit Tests
 - [ ] Integration Tests
+
+### DevOps
 - [ ] Docker
 - [ ] CI/CD
 - [ ] Cloud Deployment
