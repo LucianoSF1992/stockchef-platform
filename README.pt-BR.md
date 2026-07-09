@@ -104,7 +104,7 @@ tests/
 - [x] BaseEntity abstraction
 - [x] Category entity
 - [x] Nullable warnings fix
-- [ ] Supplier entity
+- [x] Supplier entity
 - [ ] Product entity
 - [ ] StockMovement entity
 - [ ] Domain enums
