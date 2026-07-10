@@ -95,8 +95,8 @@ This project is being developed as part of my software engineering portfolio, fo
 - [x] Supplier entity
 - [x] UnitOfMeasure enum
 - [x] Product entity
-- [X] StockMovementType enum
-- [X] StockMovement entity
+- [x] StockMovementType enum
+- [x] StockMovement entity
 - [ ] Value Objects
 
 ### Application Layer
@@ -107,16 +107,16 @@ This project is being developed as part of my software engineering portfolio, fo
 - [ ] Dependency Injection configuration
 
 ### Infrastructure Layer
-- [ ] Entity Framework Core configuration
-- [ ] DbContext implementation
-- [ ] Entity mappings
+- [x] Entity Framework Core configuration
+- [x] DbContext implementation
+- [x] Entity mappings
 - [ ] Repository implementations
-- [ ] SQL Server integration
+- [x] SQL Server integration
 - [ ] Initial migration
 
 ### API Layer
 - [ ] Controllers
-- [ ] Swagger documentation
+- [x] Swagger documentation
 - [ ] Global exception handling
 - [ ] API versioning
 

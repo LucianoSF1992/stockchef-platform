@@ -119,16 +119,16 @@ tests/
 - [ ] Configuração da Injeção de Dependência
 
 ### Camada de Infraestrutura
-- [ ] Configuração do Entity Framework Core
-- [ ] Implementação do DbContext
-- [ ] Mapeamentos das entidades
+- [x] Configuração do Entity Framework Core
+- [x] Implementação do DbContext
+- [x] Mapeamentos das entidades
 - [ ] Implementação dos repositórios
-- [ ] Integração com SQL Server
+- [x] Integração com SQL Server
 - [ ] Primeira Migration
 
 ### Camada da API
 - [ ] Controllers
-- [ ] Documentação Swagger
+- [x] Documentação Swagger
 - [ ] Tratamento global de exceções
 - [ ] Versionamento da API
 
