@@ -107,8 +107,8 @@ tests/
 - [x] Entidade Supplier
 - [x] Enum UnitOfMeasure
 - [x] Entidade Product
-- [ ] Enum StockMovementType
-- [ ] Entidade StockMovement
+- [x] Enum StockMovementType
+- [x] Entidade StockMovement
 - [ ] Objetos de Valor (Value Objects)
 
 ### Camada de Aplicação

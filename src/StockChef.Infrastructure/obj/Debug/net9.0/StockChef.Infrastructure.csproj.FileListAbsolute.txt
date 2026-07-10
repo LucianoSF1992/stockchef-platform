@@ -16,3 +16,5 @@ C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\sto
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\StockChef.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\StockChef.Infrastructure.sourcelink.json
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\StockChe.F93D618D.Up2Date
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\bin\Debug\net9.0\StockChef.Infrastructure.runtimeconfig.json
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\src\StockChef.Infrastructure\obj\Debug\net9.0\StockChef.Infrastructure.genruntimeconfig.cache
