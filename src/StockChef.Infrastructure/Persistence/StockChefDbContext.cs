@@ -17,4 +17,12 @@ public class StockChefDbContext : DbContext
     public DbSet<Product> Products => Set<Product>();
 
     public DbSet<StockMovement> StockMovements => Set<StockMovement>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(
+            typeof(StockChefDbContext).Assembly);
+
+        base.OnModelCreating(modelBuilder);
+    }
 }
