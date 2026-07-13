@@ -124,7 +124,7 @@ tests/
 - [x] Mapeamentos das entidades
 - [ ] Implementação dos repositórios
 - [x] Integração com SQL Server
-- [ ] Primeira Migration
+- [x] Primeira Migration
 
 ### Camada da API
 - [ ] Controllers

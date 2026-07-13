@@ -112,7 +112,7 @@ This project is being developed as part of my software engineering portfolio, fo
 - [x] Entity mappings
 - [ ] Repository implementations
 - [x] SQL Server integration
-- [ ] Initial migration
+- [x] Initial migration
 
 ### API Layer
 - [ ] Controllers
