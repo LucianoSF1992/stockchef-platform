@@ -112,7 +112,10 @@ tests/
 - [ ] Objetos de Valor (Value Objects)
 
 ### Camada de Aplicação
-- [ ] DTOs
+- [x] DTOs de Categoria
+- [ ] DTOs de Fornecedor
+- [ ] DTOs de Produto
+- [ ] DTOs de Movimentação de Estoque
 - [ ] Casos de Uso
 - [ ] Commands e Queries
 - [ ] Validadores

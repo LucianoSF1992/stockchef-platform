@@ -100,7 +100,10 @@ This project is being developed as part of my software engineering portfolio, fo
 - [ ] Value Objects
 
 ### Application Layer
-- [ ] DTOs
+- [x] Category DTOs
+- [ ] Supplier DTOs
+- [ ] Product DTOs
+- [ ] Stock Movement DTOs
 - [ ] Use Cases
 - [ ] Commands and Queries
 - [ ] Validators
