@@ -121,10 +121,10 @@ This project is being developed as part of my software engineering portfolio, fo
 - [ ] API versioning
 
 ### Features
-- [ ] Product management
-- [ ] Category management
-- [ ] Supplier management
-- [ ] Inventory movements
+- [X] Product management
+- [X] Category management
+- [X] Supplier management
+- [X] Inventory movements
 - [ ] Inventory control
 - [ ] Dashboard
 - [ ] Authentication & Authorization

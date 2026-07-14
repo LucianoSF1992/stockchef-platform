@@ -133,10 +133,10 @@ tests/
 - [ ] Versionamento da API
 
 ### Funcionalidades
-- [ ] Gestão de produtos
-- [ ] Gestão de categorias
-- [ ] Gestão de fornecedores
-- [ ] Movimentações de estoque
+- [X] Gestão de produtos
+- [X] Gestão de categorias
+- [X] Gestão de fornecedores
+- [X] Movimentações de estoque
 - [ ] Controle de inventário
 - [ ] Dashboard
 - [ ] Autenticação e autorização
