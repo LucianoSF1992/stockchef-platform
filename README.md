@@ -118,7 +118,7 @@ This project is being developed as part of my software engineering portfolio, fo
 - [x] Initial migration
 
 ### API Layer
-- [ ] Controllers
+- [X] Controllers
 - [x] Swagger documentation
 - [ ] Global exception handling
 - [ ] API versioning

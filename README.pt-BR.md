@@ -130,7 +130,7 @@ tests/
 - [x] Primeira Migration
 
 ### Camada da API
-- [ ] Controllers
+- [X] Controllers
 - [x] Documentação Swagger
 - [ ] Tratamento global de exceções
 - [ ] Versionamento da API
