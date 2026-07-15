@@ -90,10 +90,10 @@ C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\sto
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.AssemblyInfoInputs.cache
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.AssemblyInfo.cs
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.sourcelink.json
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChe.8A7A3FEE.Up2Date
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.dll
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\refint\StockChef.UnitTests.dll
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.pdb
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.genruntimeconfig.cache
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\ref\StockChef.UnitTests.dll
-C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.sourcelink.json

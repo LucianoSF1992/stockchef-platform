@@ -125,7 +125,7 @@ tests/
 - [x] Configuração do Entity Framework Core
 - [x] Implementação do DbContext
 - [x] Mapeamentos das entidades
-- [ ] Implementação dos repositórios
+- [X] Implementação dos repositórios
 - [x] Integração com SQL Server
 - [x] Primeira Migration
 
@@ -146,7 +146,7 @@ tests/
 - [ ] Relatórios
 
 ### Qualidade
-- [ ] Testes unitários
+- [X] Testes unitários
 - [ ] Testes de integração
 
 ### DevOps

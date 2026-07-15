@@ -113,7 +113,7 @@ This project is being developed as part of my software engineering portfolio, fo
 - [x] Entity Framework Core configuration
 - [x] DbContext implementation
 - [x] Entity mappings
-- [ ] Repository implementations
+- [X] Repository implementations
 - [x] SQL Server integration
 - [x] Initial migration
 
@@ -134,7 +134,7 @@ This project is being developed as part of my software engineering portfolio, fo
 - [ ] Reports
 
 ### Quality
-- [ ] Unit Tests
+- [X] Unit Tests
 - [ ] Integration Tests
 
 ### DevOps
