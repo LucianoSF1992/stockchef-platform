@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockChef.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f191dedc2e44c097045d1d06aae2176c1e18360")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e3e6d1082cd6ac81f5748cff5dfe99f95aabde8")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockChef.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockChef.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -105,7 +105,7 @@ This project is being developed as part of my software engineering portfolio, fo
 - [X] Product DTOs
 - [X] Stock Movement DTOs
 - [ ] Use Cases
-- [ ] Commands and Queries
+- [X] Commands and Queries (Category module started)
 - [ ] Validators
 - [ ] Dependency Injection configuration
 

@@ -117,7 +117,7 @@ tests/
 - [X] DTOs de Produto
 - [X] DTOs de Movimentação de Estoque
 - [ ] Casos de Uso
-- [ ] Commands e Queries
+- [X] Commands e Queries (módulo de categorias iniciado)
 - [ ] Validadores
 - [ ] Configuração da Injeção de Dependência
 
