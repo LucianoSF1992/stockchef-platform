@@ -113,9 +113,9 @@ tests/
 
 ### Camada de Aplicação
 - [x] DTOs de Categoria
-- [ ] DTOs de Fornecedor
-- [ ] DTOs de Produto
-- [ ] DTOs de Movimentação de Estoque
+- [X] DTOs de Fornecedor
+- [X] DTOs de Produto
+- [X] DTOs de Movimentação de Estoque
 - [ ] Casos de Uso
 - [ ] Commands e Queries
 - [ ] Validadores

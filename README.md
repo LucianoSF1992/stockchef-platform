@@ -101,9 +101,9 @@ This project is being developed as part of my software engineering portfolio, fo
 
 ### Application Layer
 - [x] Category DTOs
-- [ ] Supplier DTOs
-- [ ] Product DTOs
-- [ ] Stock Movement DTOs
+- [X] Supplier DTOs
+- [X] Product DTOs
+- [X] Stock Movement DTOs
 - [ ] Use Cases
 - [ ] Commands and Queries
 - [ ] Validators
