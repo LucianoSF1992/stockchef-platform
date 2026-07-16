@@ -5,6 +5,8 @@ using StockChef.Infrastructure;
 using StockChef.Infrastructure.Persistence;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using StockChef.Application.Features.Categories.Validators;
+using StockChef.Application.DTOs.Categories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,7 +28,7 @@ builder.Services.AddMediatR(cfg =>
 // Controllers
 builder.Services.AddControllers();
 
-builder.Services.AddValidatorsFromAssemblyContaining<CreateCategoryCommandValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateCategoryDto>();
 
 builder.Services.AddFluentValidationAutoValidation();
 
