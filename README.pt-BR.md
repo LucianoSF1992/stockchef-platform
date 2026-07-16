@@ -118,7 +118,7 @@ tests/
 - [X] DTOs de Movimentação de Estoque
 - [ ] Casos de Uso
 - [X] Commands e Queries (módulo de categorias iniciado)
-- [ ] Validadores
+- [X] Validadores
 - [ ] Configuração da Injeção de Dependência
 
 ### Camada de Infraestrutura

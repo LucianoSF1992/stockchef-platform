@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using StockChef.Application.Features.Categories.Commands;
 using StockChef.Infrastructure;
 using StockChef.Infrastructure.Persistence;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,10 @@ builder.Services.AddMediatR(cfg =>
 
 // Controllers
 builder.Services.AddControllers();
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateCategoryCommandValidator>();
+
+builder.Services.AddFluentValidationAutoValidation();
 
 // Swagger / OpenAPI
 builder.Services.AddEndpointsApiExplorer();

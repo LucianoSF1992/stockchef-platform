@@ -106,7 +106,7 @@ This project is being developed as part of my software engineering portfolio, fo
 - [X] Stock Movement DTOs
 - [ ] Use Cases
 - [X] Commands and Queries (Category module started)
-- [ ] Validators
+- [X] Validators
 - [ ] Dependency Injection configuration
 
 ### Infrastructure Layer
