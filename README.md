@@ -77,9 +77,9 @@ This project is being developed as part of my software engineering portfolio, fo
 
 ---
 
-## Roadmap
+## 🚀 Roadmap
 
-### Project Foundation
+### 📦 Project Foundation
 - [x] Repository creation
 - [x] Initial solution setup
 - [x] Clean Architecture structure
@@ -88,7 +88,7 @@ This project is being developed as part of my software engineering portfolio, fo
 - [x] Git ignore configuration
 - [x] EditorConfig configuration
 
-### Domain Layer
+### 🏛️ Domain Layer
 - [x] BaseEntity abstraction
 - [x] Category entity
 - [x] Nullable warnings fix
@@ -99,48 +99,79 @@ This project is being developed as part of my software engineering portfolio, fo
 - [x] StockMovement entity
 - [ ] Value Objects
 
-### Application Layer
+### ⚙️ Application Layer
 - [x] Category DTOs
-- [X] Supplier DTOs
-- [X] Product DTOs
-- [X] Stock Movement DTOs
-- [ ] Use Cases
-- [X] Commands and Queries (Category module started)
-- [X] Validators
-- [ ] Dependency Injection configuration
+- [x] Supplier DTOs
+- [x] Product DTOs
+- [x] Stock Movement DTOs
+- [x] Use Cases (Category module started)
+- [x] Commands and Queries (CQRS)
+- [x] Validators
+- [x] Dependency Injection configuration
+- [ ] MediatR Pipeline Behaviors
+- [ ] AutoMapper mappings
 
-### Infrastructure Layer
+### 🗄️ Infrastructure Layer
 - [x] Entity Framework Core configuration
 - [x] DbContext implementation
 - [x] Entity mappings
-- [X] Repository implementations
+- [x] Repository implementations
 - [x] SQL Server integration
 - [x] Initial migration
+- [ ] Distributed Cache
+- [ ] File Storage Service
+- [ ] Messaging integration
 
-### API Layer
-- [X] Controllers
+### 🌐 API Layer
+- [x] Controllers
 - [x] Swagger documentation
 - [ ] Global exception handling
 - [ ] API versioning
+- [ ] Rate limiting
+- [ ] Monitoring and Health Checks
 
-### Features
-- [X] Product management
-- [X] Category management
-- [X] Supplier management
-- [X] Inventory movements
+### 📋 Features
+- [x] Product management
+- [x] Category management
+- [x] Supplier management
+- [x] Inventory movements
 - [ ] Inventory control
 - [ ] Dashboard
 - [ ] Authentication & Authorization
 - [ ] Reports
+- [ ] Low stock alerts
+- [ ] Movement history
+- [ ] Audit trail
 
-### Quality
-- [X] Unit Tests
+### 🖥️ Web Frontend (Angular)
+- [ ] Angular project setup
+- [ ] Feature-based architecture
+- [ ] Responsive layout
+- [ ] Login page
+- [ ] Dashboard
+- [ ] Product management screens
+- [ ] Category management screens
+- [ ] Supplier management screens
+- [ ] Inventory movement screens
+- [ ] Reports
+- [ ] JWT integration
+- [ ] Guards and Interceptors
+- [ ] State management
+- [ ] Internationalization (PT-BR / EN / ES)
+
+### 🧪 Quality
+- [x] Unit Tests
 - [ ] Integration Tests
+- [ ] Contract Tests
+- [ ] End-to-End Tests
+- [ ] Static Code Analysis
 
-### DevOps
+### 🚀 DevOps
 - [ ] Docker
-- [ ] CI/CD
+- [ ] Docker Compose
+- [ ] CI/CD Pipeline
 - [ ] Cloud Deployment
+- [ ] Monitoring and Observability
 
 ---
 

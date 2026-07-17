@@ -89,70 +89,101 @@ tests/
 
 ---
 
-## Roadmap
+## 🚀 Roadmap
 
-### Fundação do Projeto
+### 📦 Fundação do Projeto
 - [x] Criação do repositório
 - [x] Configuração inicial da solução
-- [x] Estrutura da Clean Architecture
-- [x] Documentação do README (EN/PT-BR)
+- [x] Estrutura em Clean Architecture
+- [x] Documentação README (EN/PT-BR)
 - [x] Configuração da licença
 - [x] Configuração do Git Ignore
 - [x] Configuração do EditorConfig
 
-### Camada de Domínio
-- [x] Abstração da BaseEntity
-- [x] Entidade Category
-- [x] Correção dos avisos de referências anuláveis
-- [x] Entidade Supplier
-- [x] Enum UnitOfMeasure
-- [x] Entidade Product
-- [x] Enum StockMovementType
-- [x] Entidade StockMovement
+### 🏛️ Camada de Domínio
+- [x] Abstração BaseEntity
+- [x] Entidade Categoria
+- [x] Correção dos avisos de nulabilidade
+- [x] Entidade Fornecedor
+- [x] Enumeração Unidade de Medida
+- [x] Entidade Produto
+- [x] Enumeração Tipo de Movimentação de Estoque
+- [x] Entidade Movimentação de Estoque
 - [ ] Objetos de Valor (Value Objects)
 
-### Camada de Aplicação
+### ⚙️ Camada de Aplicação
 - [x] DTOs de Categoria
-- [X] DTOs de Fornecedor
-- [X] DTOs de Produto
-- [X] DTOs de Movimentação de Estoque
-- [ ] Casos de Uso
-- [X] Commands e Queries (módulo de categorias iniciado)
-- [X] Validadores
-- [ ] Configuração da Injeção de Dependência
+- [x] DTOs de Fornecedor
+- [x] DTOs de Produto
+- [x] DTOs de Movimentação de Estoque
+- [x] Casos de Uso (módulo Categoria iniciado)
+- [x] Comandos e Consultas (CQRS)
+- [x] Validadores
+- [x] Configuração de Injeção de Dependência
+- [ ] Pipeline Behaviors do MediatR
+- [ ] Mapeamentos com AutoMapper
 
-### Camada de Infraestrutura
+### 🗄️ Camada de Infraestrutura
 - [x] Configuração do Entity Framework Core
 - [x] Implementação do DbContext
-- [x] Mapeamentos das entidades
-- [X] Implementação dos repositórios
+- [x] Mapeamentos das Entidades
+- [x] Implementações dos Repositórios
 - [x] Integração com SQL Server
-- [x] Primeira Migration
+- [x] Migração Inicial
+- [ ] Cache Distribuído
+- [ ] Serviço de Armazenamento de Arquivos
+- [ ] Integração com Mensageria
 
-### Camada da API
-- [X] Controllers
+### 🌐 Camada da API
+- [x] Controladores
 - [x] Documentação Swagger
-- [ ] Tratamento global de exceções
+- [ ] Tratamento Global de Exceções
 - [ ] Versionamento da API
+- [ ] Limitação de Requisições (Rate Limiting)
+- [ ] Monitoramento e Health Checks
 
-### Funcionalidades
-- [X] Gestão de produtos
-- [X] Gestão de categorias
-- [X] Gestão de fornecedores
-- [X] Movimentações de estoque
-- [ ] Controle de inventário
+### 📋 Funcionalidades
+- [x] Gestão de Produtos
+- [x] Gestão de Categorias
+- [x] Gestão de Fornecedores
+- [x] Movimentações de Estoque
+- [ ] Controle de Estoque
 - [ ] Dashboard
-- [ ] Autenticação e autorização
+- [ ] Autenticação e Autorização
 - [ ] Relatórios
+- [ ] Alertas de Estoque Baixo
+- [ ] Histórico de Movimentações
+- [ ] Auditoria
 
-### Qualidade
-- [X] Testes unitários
-- [ ] Testes de integração
+### 🖥️ Frontend Web (Angular)
+- [ ] Configuração do projeto Angular
+- [ ] Estrutura baseada em módulos e funcionalidades
+- [ ] Layout responsivo
+- [ ] Página de Login
+- [ ] Dashboard
+- [ ] Cadastro de Produtos
+- [ ] Cadastro de Categorias
+- [ ] Cadastro de Fornecedores
+- [ ] Movimentações de Estoque
+- [ ] Relatórios
+- [ ] Integração com JWT
+- [ ] Guards e Interceptors
+- [ ] Gerenciamento de Estado
+- [ ] Internacionalização (PT-BR / EN / ES)
 
-### DevOps
+### 🧪 Qualidade
+- [x] Testes Unitários
+- [ ] Testes de Integração
+- [ ] Testes de Contrato
+- [ ] Testes End-to-End
+- [ ] Análise Estática de Código
+
+### 🚀 DevOps
 - [ ] Docker
-- [ ] CI/CD
-- [ ] Publicação em nuvem
+- [ ] Docker Compose
+- [ ] Pipeline CI/CD
+- [ ] Deploy em Nuvem
+- [ ] Monitoramento e Observabilidade
 
 ---
 
