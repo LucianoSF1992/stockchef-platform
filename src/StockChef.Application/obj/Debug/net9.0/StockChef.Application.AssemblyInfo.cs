@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockChef.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7424da4053df7343d2bb85ea5571d7abe36cabe4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4de5a5cf549b7d3445f01a773d7678372ce226bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockChef.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockChef.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
