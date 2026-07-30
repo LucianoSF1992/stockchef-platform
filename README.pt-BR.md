@@ -2,22 +2,33 @@
 
 [🇺🇸 English](README.md) | 🇧🇷 Português
 
-## Sobre o projeto
+---
 
-O StockChef Platform é uma aplicação web full stack para gerenciamento de estoque de restaurantes.
+# Sobre o Projeto
 
-O projeto tem como objetivo oferecer uma forma eficiente de controlar produtos, categorias, fornecedores, movimentações de estoque e informações operacionais, utilizando tecnologias modernas e boas práticas de engenharia de software.
+O **StockChef Platform** é uma aplicação web full stack para gerenciamento de estoque de restaurantes.
 
-Este projeto está sendo desenvolvido como parte do meu portfólio profissional, seguindo práticas utilizadas em projetos corporativos e com foco em código limpo, escalabilidade, manutenibilidade e testabilidade.
+O projeto está sendo desenvolvido para demonstrar práticas modernas de desenvolvimento de software corporativo utilizando:
+
+- ASP.NET Core 9
+- Angular
+- Clean Architecture
+- Domain-Driven Design (DDD)
+- CQRS com MediatR
+- Entity Framework Core
+- SQL Server
+
+A aplicação permitirá o gerenciamento de produtos, categorias, fornecedores e movimentações de estoque, seguindo princípios de escalabilidade, manutenibilidade, código limpo e boas práticas de arquitetura.
 
 ---
 
-## Objetivos do Projeto
+# Objetivos do Projeto
 
 - Desenvolver uma aplicação corporativa baseada em um cenário real.
 - Aplicar os princípios da Clean Architecture.
 - Praticar conceitos de Domain-Driven Design (DDD).
-- Desenvolver APIs REST utilizando ASP.NET Core.
+- Implementar CQRS utilizando MediatR.
+- Desenvolver APIs REST com ASP.NET Core.
 - Construir um frontend moderno utilizando Angular.
 - Implementar autenticação e autorização.
 - Desenvolver testes automatizados.
@@ -26,49 +37,50 @@ Este projeto está sendo desenvolvido como parte do meu portfólio profissional,
 
 ---
 
-## Funcionalidades
+# Funcionalidades
 
-- Gestão de produtos
-- Gestão de categorias
-- Gestão de fornecedores
-- Movimentações de estoque
-- Controle de inventário
-- Dashboard operacional
-- Autenticação e autorização
-- Relatórios gerenciais
+- Gestão de Produtos
+- Gestão de Categorias
+- Gestão de Fornecedores
+- Movimentações de Estoque
+- Controle de Inventário
+- Dashboard
+- Relatórios
+- Autenticação e Autorização
 
 ---
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
-### Backend
+## Backend
 
 - C#
-- ASP.NET Core
+- ASP.NET Core 9
 - Entity Framework Core
 - SQL Server
+- MediatR
 - REST API
-- JWT Authentication
+- JWT Authentication (planejado)
 
-### Frontend
+## Frontend
 
-- Angular
+- Angular 22
 - Angular Material
 - TypeScript
 - RxJS
 
-### Arquitetura
+## Arquitetura
 
 - Clean Architecture
+- Domain-Driven Design (DDD)
 - Princípios SOLID
-- Injeção de Dependência
 - Repository Pattern
-- Unit of Work
-- CQRS (implementação futura)
+- Injeção de Dependência
+- CQRS (MediatR)
 
 ---
 
-## Estrutura do Projeto
+# Estrutura do Projeto
 
 ```text
 src/
@@ -83,128 +95,209 @@ tests/
 
 ---
 
-## Status do Projeto
+# Status do Projeto
 
 🚧 Em desenvolvimento
 
+**Foco atual:**
+
+- Desenvolvimento da API
+- Modelagem de Domínio
+- Implementação de CQRS
+- Repository Pattern
+
+O frontend em Angular será iniciado após a conclusão das principais funcionalidades da API.
+
 ---
 
-## 🚀 Roadmap
+# 🚀 Roadmap
 
-### 📦 Fundação do Projeto
+## 📦 Fundação do Projeto
+
 - [x] Criação do repositório
 - [x] Configuração inicial da solução
 - [x] Estrutura em Clean Architecture
-- [x] Documentação README (EN/PT-BR)
-- [x] Configuração da licença
-- [x] Configuração do Git Ignore
-- [x] Configuração do EditorConfig
+- [x] README (EN/PT-BR)
+- [x] Licença MIT
+- [x] Configuração do .gitignore
+- [x] Configuração do .editorconfig
 
-### 🏛️ Camada de Domínio
-- [x] Abstração BaseEntity
+---
+
+## 🏛 Camada de Domínio
+
+- [x] BaseEntity
 - [x] Entidade Categoria
-- [x] Correção dos avisos de nulabilidade
 - [x] Entidade Fornecedor
-- [x] Enumeração Unidade de Medida
 - [x] Entidade Produto
-- [x] Enumeração Tipo de Movimentação de Estoque
 - [x] Entidade Movimentação de Estoque
-- [ ] Objetos de Valor (Value Objects)
+- [x] Enum UnitOfMeasure
+- [x] Enum StockMovementType
+- [ ] Value Objects
 
-### ⚙️ Camada de Aplicação
-- [x] DTOs de Categoria
-- [x] DTOs de Fornecedor
-- [x] DTOs de Produto
-- [x] DTOs de Movimentação de Estoque
-- [x] Casos de Uso (módulo Categoria iniciado)
-- [x] Comandos e Consultas (CQRS)
-- [x] Validadores
+---
+
+## ⚙️ Camada de Aplicação
+
+### Categorias
+
+- [x] DTOs
+- [x] Commands
+- [x] Queries
+- [x] Handlers
+
+### Produtos
+
+- [x] DTOs
+- [x] Commands
+- [x] Queries
+- [x] Handlers
+
+### Fornecedores
+
+- [x] DTOs
+- [x] Create Command
+- [x] Create Handler
+- [ ] Queries
+- [ ] Update Command
+- [ ] Delete Command
+
+### Movimentações de Estoque
+
+- [x] DTOs
+- [ ] Commands
+- [ ] Queries
+- [ ] Handlers
+
+### Componentes Compartilhados
+
 - [x] Configuração de Injeção de Dependência
+- [ ] FluentValidation
 - [ ] Pipeline Behaviors do MediatR
-- [ ] Mapeamentos com AutoMapper
+- [ ] AutoMapper
 
-### 🗄️ Camada de Infraestrutura
-- [x] Configuração do Entity Framework Core
-- [x] Implementação do DbContext
-- [x] Mapeamentos das Entidades
-- [x] Implementações dos Repositórios
-- [x] Integração com SQL Server
+---
+
+## 🗄 Camada de Infraestrutura
+
+- [x] Entity Framework Core
+- [x] DbContext
+- [x] SQL Server
 - [x] Migração Inicial
+
+### Repositórios
+
+- [x] CategoryRepository
+- [x] ProductRepository
+- [x] SupplierRepository
+- [ ] StockMovementRepository
+
+### Futuras Implementações
+
 - [ ] Cache Distribuído
 - [ ] Serviço de Armazenamento de Arquivos
 - [ ] Integração com Mensageria
 
-### 🌐 Camada da API
-- [x] Controladores
-- [x] Documentação Swagger
-- [ ] Tratamento Global de Exceções
-- [ ] Versionamento da API
-- [ ] Limitação de Requisições (Rate Limiting)
-- [ ] Monitoramento e Health Checks
+---
 
-### 📋 Funcionalidades
-- [x] Gestão de Produtos
+## 🌐 Camada da API
+
+- [x] Swagger
+- [x] CategoryController
+- [ ] ProductController
+- [ ] SupplierController
+- [ ] StockMovementController
+- [ ] Middleware Global de Exceções
+- [ ] Versionamento da API
+- [ ] Rate Limiting
+- [ ] Health Checks
+
+---
+
+## 📋 Módulos de Negócio
+
 - [x] Gestão de Categorias
-- [x] Gestão de Fornecedores
-- [x] Movimentações de Estoque
+- [x] Gestão de Produtos
+- [ ] Gestão de Fornecedores
+- [ ] Movimentações de Estoque
 - [ ] Controle de Estoque
 - [ ] Dashboard
-- [ ] Autenticação e Autorização
 - [ ] Relatórios
+- [ ] Autenticação e Autorização
 - [ ] Alertas de Estoque Baixo
-- [ ] Histórico de Movimentações
 - [ ] Auditoria
 
-### 🖥️ Frontend Web (Angular)
-- [ ] Configuração do projeto Angular
-- [ ] Estrutura baseada em módulos e funcionalidades
-- [ ] Layout responsivo
-- [ ] Página de Login
+---
+
+## 🖥 Frontend Web (Angular)
+
+- [ ] Configuração do Projeto Angular
+- [ ] Angular Material
+- [ ] Layout Responsivo
+- [ ] Tela de Login
 - [ ] Dashboard
-- [ ] Cadastro de Produtos
-- [ ] Cadastro de Categorias
-- [ ] Cadastro de Fornecedores
+- [ ] Gestão de Produtos
+- [ ] Gestão de Categorias
+- [ ] Gestão de Fornecedores
 - [ ] Movimentações de Estoque
 - [ ] Relatórios
 - [ ] Integração com JWT
-- [ ] Guards e Interceptors
+- [ ] Guards
+- [ ] Interceptors
 - [ ] Gerenciamento de Estado
 - [ ] Internacionalização (PT-BR / EN / ES)
 
-### 🧪 Qualidade
-- [x] Testes Unitários
+---
+
+## 🧪 Qualidade
+
+- [ ] Testes Unitários
 - [ ] Testes de Integração
 - [ ] Testes de Contrato
 - [ ] Testes End-to-End
 - [ ] Análise Estática de Código
 
-### 🚀 DevOps
+---
+
+## 🚀 DevOps
+
 - [ ] Docker
 - [ ] Docker Compose
+- [ ] GitHub Actions
 - [ ] Pipeline CI/CD
 - [ ] Deploy em Nuvem
-- [ ] Monitoramento e Observabilidade
+- [ ] Monitoramento
+- [ ] Observabilidade
 
 ---
 
-## Deploy
+# Deploy
 
-Após a conclusão do projeto, a aplicação será publicada no seguinte endereço:
+Após a conclusão da versão **1.0**, a aplicação estará disponível em:
 
 https://stockchefplatform.lucianoferreiradev.com
 
 ---
 
-## Autor
+# Autor
 
-Desenvolvido por **Luciano Silva Ferreira**
+**Luciano Silva Ferreira**
 
-- 🌐 Portfólio: https://www.lucianoferreiradev.com
-- 💼 LinkedIn: https://www.linkedin.com/in/lucianoferreira92/
-- 💻 GitHub: https://github.com/LucianoSF1992
+🌐 **Portfólio**  
+https://www.lucianoferreiradev.com
+
+💼 **LinkedIn**  
+https://www.linkedin.com/in/lucianoferreira92/
+
+💻 **GitHub**  
+https://github.com/LucianoSF1992
 
 ---
 
-## Licença
+# Licença
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto está licenciado sob a licença **MIT**.
+
+---
+
+⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.

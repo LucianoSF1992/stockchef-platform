@@ -1,192 +1,287 @@
-## StockChef Platform
+# StockChef Platform
 
 ![Status](https://img.shields.io/badge/status-under%20development-yellow)
 ![.NET](https://img.shields.io/badge/.NET-9.0-512BD4)
-![Angular](https://img.shields.io/badge/Angular-latest-DD0031)
+![Angular](https://img.shields.io/badge/Angular-22-DD0031)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 🇺🇸 English | [🇧🇷 Português](README.pt-BR.md)
 
-## About
+---
+
+# About
 
 StockChef Platform is a full-stack web application for restaurant inventory management.
 
-The project aims to provide an efficient way to manage products, categories, suppliers, stock movements, and operational information while demonstrating modern software engineering practices using ASP.NET Core, Angular and Clean Architecture.
+The project is being developed to demonstrate enterprise software development practices using:
 
-This project is being developed as part of my software engineering portfolio, following professional development practices and focusing on clean code, scalability, maintainability, and testability.
+- ASP.NET Core 9
+- Angular
+- Clean Architecture
+- Domain-Driven Design (DDD)
+- CQRS with MediatR
+- Entity Framework Core
+- SQL Server
+
+The application allows restaurants to manage products, suppliers, categories and inventory while following modern software engineering principles focused on scalability, maintainability and clean code.
 
 ---
 
-## Project Goals
+# Project Goals
 
 - Build a real-world enterprise application
 - Apply Clean Architecture principles
-- Practice Domain-Driven Design concepts
-- Develop RESTful APIs with ASP.NET Core
+- Practice Domain-Driven Design
+- Implement CQRS using MediatR
+- Develop RESTful APIs
 - Build a modern Angular frontend
-- Implement authentication and authorization
+- Implement Authentication & Authorization
 - Write automated tests
 - Configure CI/CD pipelines
-- Deploy the application to the cloud
+- Deploy to the cloud
 
 ---
 
-## Features
+# Features
 
-- Product management
-- Category management
-- Supplier management
-- Stock movements
-- Inventory control
+- Product Management
+- Category Management
+- Supplier Management
+- Stock Movements
+- Inventory Control
 - Dashboard
-- Authentication & Authorization
 - Reports
+- Authentication & Authorization
 
-## Tech Stack
+---
 
-### Backend
+# Tech Stack
+
+## Backend
 
 - C#
-- ASP.NET Core
+- ASP.NET Core 9
 - Entity Framework Core
 - SQL Server
+- MediatR
 - REST API
-- JWT Authentication
+- JWT Authentication (planned)
 
-### Frontend
+## Frontend
 
-- Angular
+- Angular 22
 - Angular Material
 - TypeScript
 - RxJS
 
-### Architecture
+## Architecture
 
 - Clean Architecture
+- Domain-Driven Design (DDD)
 - SOLID Principles
-- Dependency Injection
 - Repository Pattern
-- Unit of Work
-- CQRS (future implementation)
+- Dependency Injection
+- CQRS (MediatR)
 
 ---
 
-## Project Status
+# Project Status
 
-🚧 Under development
+🚧 Under Development
+
+Current focus:
+
+- Backend API
+- Domain Modeling
+- CQRS Implementation
+- Repository Pattern
+
+Frontend development will start after the backend reaches feature completeness.
 
 ---
 
-## 🚀 Roadmap
+# 🚀 Roadmap
 
-### 📦 Project Foundation
+## 📦 Project Foundation
+
 - [x] Repository creation
-- [x] Initial solution setup
-- [x] Clean Architecture structure
-- [x] README documentation (EN/PT-BR)
-- [x] License configuration
-- [x] Git ignore configuration
-- [x] EditorConfig configuration
+- [x] Solution structure
+- [x] Clean Architecture
+- [x] README (EN/PT-BR)
+- [x] MIT License
+- [x] .gitignore
+- [x] .editorconfig
 
-### 🏛️ Domain Layer
-- [x] BaseEntity abstraction
-- [x] Category entity
-- [x] Nullable warnings fix
-- [x] Supplier entity
-- [x] UnitOfMeasure enum
-- [x] Product entity
-- [x] StockMovementType enum
-- [x] StockMovement entity
+---
+
+## 🏛 Domain Layer
+
+- [x] BaseEntity
+- [x] Category
+- [x] Supplier
+- [x] Product
+- [x] StockMovement
+- [x] UnitOfMeasure
+- [x] StockMovementType
 - [ ] Value Objects
 
-### ⚙️ Application Layer
-- [x] Category DTOs
-- [x] Supplier DTOs
-- [x] Product DTOs
-- [x] Stock Movement DTOs
-- [x] Use Cases (Category module started)
-- [x] Commands and Queries (CQRS)
-- [x] Validators
-- [x] Dependency Injection configuration
+---
+
+## ⚙️ Application Layer
+
+### Categories
+
+- [x] DTOs
+- [x] Commands
+- [x] Queries
+- [x] Handlers
+
+### Products
+
+- [x] DTOs
+- [x] Commands
+- [x] Queries
+- [x] Handlers
+
+### Suppliers
+
+- [x] DTOs
+- [x] Create Command
+- [x] Create Handler
+- [ ] Queries
+- [ ] Update Command
+- [ ] Delete Command
+
+### Stock Movements
+
+- [x] DTOs
+- [ ] Commands
+- [ ] Queries
+- [ ] Handlers
+
+### Cross-Cutting
+
+- [x] Dependency Injection
+- [ ] FluentValidation
 - [ ] MediatR Pipeline Behaviors
-- [ ] AutoMapper mappings
+- [ ] AutoMapper
 
-### 🗄️ Infrastructure Layer
-- [x] Entity Framework Core configuration
-- [x] DbContext implementation
-- [x] Entity mappings
-- [x] Repository implementations
-- [x] SQL Server integration
-- [x] Initial migration
+---
+
+## 🗄 Infrastructure Layer
+
+- [x] Entity Framework Core
+- [x] DbContext
+- [x] SQL Server
+- [x] Initial Migration
+
+### Repositories
+
+- [x] CategoryRepository
+- [x] ProductRepository
+- [x] SupplierRepository
+- [ ] StockMovementRepository
+
+### Future
+
 - [ ] Distributed Cache
-- [ ] File Storage Service
-- [ ] Messaging integration
+- [ ] File Storage
+- [ ] Messaging
 
-### 🌐 API Layer
-- [x] Controllers
-- [x] Swagger documentation
-- [ ] Global exception handling
-- [ ] API versioning
-- [ ] Rate limiting
-- [ ] Monitoring and Health Checks
+---
 
-### 📋 Features
-- [x] Product management
-- [x] Category management
-- [x] Supplier management
-- [x] Inventory movements
-- [ ] Inventory control
+## 🌐 API Layer
+
+- [x] Swagger
+- [x] Category Controller
+- [ ] Product Controller
+- [ ] Supplier Controller
+- [ ] StockMovement Controller
+- [ ] Global Exception Middleware
+- [ ] API Versioning
+- [ ] Rate Limiting
+- [ ] Health Checks
+
+---
+
+## 📋 Business Modules
+
+- [x] Category Management
+- [x] Product Management
+- [ ] Supplier Management
+- [ ] Inventory Movements
+- [ ] Inventory Control
 - [ ] Dashboard
+- [ ] Reports
 - [ ] Authentication & Authorization
-- [ ] Reports
-- [ ] Low stock alerts
-- [ ] Movement history
-- [ ] Audit trail
+- [ ] Low Stock Alerts
+- [ ] Audit Trail
 
-### 🖥️ Web Frontend (Angular)
-- [ ] Angular project setup
-- [ ] Feature-based architecture
-- [ ] Responsive layout
-- [ ] Login page
+---
+
+## 🖥 Angular Frontend
+
+- [ ] Angular Project
+- [ ] Angular Material
+- [ ] Responsive Layout
+- [ ] Login
 - [ ] Dashboard
-- [ ] Product management screens
-- [ ] Category management screens
-- [ ] Supplier management screens
-- [ ] Inventory movement screens
+- [ ] Products
+- [ ] Categories
+- [ ] Suppliers
+- [ ] Inventory
 - [ ] Reports
-- [ ] JWT integration
-- [ ] Guards and Interceptors
-- [ ] State management
+- [ ] JWT Integration
+- [ ] Guards
+- [ ] Interceptors
+- [ ] State Management
 - [ ] Internationalization (PT-BR / EN / ES)
 
-### 🧪 Quality
-- [x] Unit Tests
+---
+
+## 🧪 Testing
+
+- [ ] Unit Tests
 - [ ] Integration Tests
 - [ ] Contract Tests
 - [ ] End-to-End Tests
 - [ ] Static Code Analysis
 
-### 🚀 DevOps
+---
+
+## 🚀 DevOps
+
 - [ ] Docker
 - [ ] Docker Compose
+- [ ] GitHub Actions
 - [ ] CI/CD Pipeline
 - [ ] Cloud Deployment
-- [ ] Monitoring and Observability
+- [ ] Monitoring
+- [ ] Observability
 
 ---
 
-## Deployment
+# Deployment
 
-After the project completion, the application will be available at the following address:
+After the project reaches version **1.0**, it will be available at:
 
 https://stockchefplatform.lucianoferreiradev.com
 
 ---
 
-## Author
+# Author
 
-Developed by **Luciano Silva Ferreira**
+**Luciano Silva Ferreira**
 
-- 🌐 Portfolio: <https://www.lucianoferreiradev.com/>
-- 💼 LinkedIn: <https://www.linkedin.com/in/lucianoferreira92/>
-- 💻 GitHub: https://github.com/LucianoSF1992
+🌐 Portfolio  
+https://www.lucianoferreiradev.com/
+
+💼 LinkedIn  
+https://www.linkedin.com/in/lucianoferreira92/
+
+💻 GitHub  
+https://github.com/LucianoSF1992
+
+---
+
+⭐ If you enjoyed this project, consider giving it a star.
