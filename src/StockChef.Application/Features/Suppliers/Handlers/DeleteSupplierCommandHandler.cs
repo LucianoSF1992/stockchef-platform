@@ -24,7 +24,7 @@ public class DeleteSupplierCommandHandler
         if (supplier is null)
             return false;
 
-        await _repository.DeleteAsync(request.Id);
+        await _repository.DeleteAsync(supplier);
 
         return true;
     }
