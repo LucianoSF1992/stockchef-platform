@@ -68,6 +68,41 @@ public class Product : BaseEntity
         CurrentStock = 0;
     }
 
+    public void ApplyStockMovement(
+    StockMovementType type,
+    decimal quantity)
+    {
+        if (quantity <= 0)
+            throw new ArgumentException(
+                "Stock movement quantity must be greater than zero.");
+
+        switch (type)
+        {
+            case StockMovementType.Entry:
+                CurrentStock += quantity;
+                break;
+
+            case StockMovementType.Exit:
+            case StockMovementType.Loss:
+                if (CurrentStock < quantity)
+                    throw new InvalidOperationException(
+                        "Insufficient stock for this movement.");
+
+                CurrentStock -= quantity;
+                break;
+
+            case StockMovementType.Adjustment:
+                throw new InvalidOperationException(
+                    "Adjustment movements require a specific adjustment rule.");
+
+            default:
+                throw new ArgumentOutOfRangeException(
+                    nameof(type),
+                    type,
+                    "Invalid stock movement type.");
+        }
+    }
+
     public bool IsLowStock()
     {
         return CurrentStock <= MinimumStock;
