@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockChef.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7972708527d6cc97123c7ba563515e6856f1b5b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5406367736f7571dbe437b223f1ee141b2ee4f21")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockChef.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockChef.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
