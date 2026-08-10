@@ -115,12 +115,12 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 ## 📦 Fundação do Projeto
 
 - [x] Criação do repositório
-- [x] Configuração inicial da solução
-- [x] Estrutura em Clean Architecture
+- [x] Estrutura da solução
+- [x] Clean Architecture
 - [x] README (EN/PT-BR)
 - [x] Licença MIT
-- [x] Configuração do .gitignore
-- [x] Configuração do .editorconfig
+- [x] .gitignore
+- [x] .editorconfig
 
 ---
 
@@ -131,9 +131,10 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] Entidade Fornecedor
 - [x] Entidade Produto
 - [x] Entidade Movimentação de Estoque
-- [x] Enum UnitOfMeasure
-- [x] Enum StockMovementType
-- [ ] Value Objects
+- [x] Enum Unidade de Medida
+- [x] Enum Tipo de Movimentação de Estoque
+- [x] Regras de negócio de movimentação de estoque
+- [ ] Objetos de Valor
 
 ---
 
@@ -145,6 +146,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] Commands
 - [x] Queries
 - [x] Handlers
+- [x] Validadores
 
 ### Produtos
 
@@ -156,18 +158,16 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 ### Fornecedores
 
 - [x] DTOs
-- [x] Create Command
-- [x] Create Handler
-- [ ] Queries
-- [ ] Update Command
-- [ ] Delete Command
+- [x] Commands
+- [x] Queries
+- [x] Handlers
 
 ### Movimentações de Estoque
 
 - [x] DTOs
-- [ ] Commands
-- [ ] Queries
-- [ ] Handlers
+- [x] Commands
+- [x] Queries
+- [x] Handlers
 
 ### Componentes Compartilhados
 
@@ -182,6 +182,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 
 - [x] Entity Framework Core
 - [x] DbContext
+- [x] Mapeamentos das entidades
 - [x] SQL Server
 - [x] Migração Inicial
 
@@ -190,7 +191,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] CategoryRepository
 - [x] ProductRepository
 - [x] SupplierRepository
-- [ ] StockMovementRepository
+- [x] StockMovementRepository
 
 ### Futuras Implementações
 
@@ -204,9 +205,9 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 
 - [x] Swagger
 - [x] CategoryController
-- [ ] ProductController
-- [ ] SupplierController
-- [ ] StockMovementController
+- [x] ProductController
+- [x] SupplierController
+- [x] StockMovementController
 - [ ] Middleware Global de Exceções
 - [ ] Versionamento da API
 - [ ] Rate Limiting
@@ -218,9 +219,9 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 
 - [x] Gestão de Categorias
 - [x] Gestão de Produtos
-- [ ] Gestão de Fornecedores
-- [ ] Movimentações de Estoque
-- [ ] Controle de Estoque
+- [x] Gestão de Fornecedores
+- [x] Movimentações de Estoque
+- [x] Controle de Estoque
 - [ ] Dashboard
 - [ ] Relatórios
 - [ ] Autenticação e Autorização
@@ -231,7 +232,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 
 ## 🖥 Frontend Web (Angular)
 
-- [ ] Configuração do Projeto Angular
+- [ ] Projeto Angular
 - [ ] Angular Material
 - [ ] Layout Responsivo
 - [ ] Tela de Login
@@ -251,7 +252,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 
 ## 🧪 Qualidade
 
-- [ ] Testes Unitários
+- [x] Testes Unitários
 - [ ] Testes de Integração
 - [ ] Testes de Contrato
 - [ ] Testes End-to-End

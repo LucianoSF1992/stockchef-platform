@@ -123,6 +123,7 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] StockMovement
 - [x] UnitOfMeasure
 - [x] StockMovementType
+- [x] Stock movement business rules
 - [ ] Value Objects
 
 ---
@@ -135,6 +136,7 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] Commands
 - [x] Queries
 - [x] Handlers
+- [x] Validators
 
 ### Products
 
@@ -146,18 +148,16 @@ Frontend development will start after the backend reaches feature completeness.
 ### Suppliers
 
 - [x] DTOs
-- [x] Create Command
-- [x] Create Handler
-- [ ] Queries
-- [ ] Update Command
-- [ ] Delete Command
+- [x] Commands
+- [x] Queries
+- [x] Handlers
 
 ### Stock Movements
 
 - [x] DTOs
-- [ ] Commands
-- [ ] Queries
-- [ ] Handlers
+- [x] Commands
+- [x] Queries
+- [x] Handlers
 
 ### Cross-Cutting
 
@@ -172,6 +172,7 @@ Frontend development will start after the backend reaches feature completeness.
 
 - [x] Entity Framework Core
 - [x] DbContext
+- [x] Entity mappings
 - [x] SQL Server
 - [x] Initial Migration
 
@@ -180,7 +181,7 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] CategoryRepository
 - [x] ProductRepository
 - [x] SupplierRepository
-- [ ] StockMovementRepository
+- [x] StockMovementRepository
 
 ### Future
 
@@ -194,9 +195,9 @@ Frontend development will start after the backend reaches feature completeness.
 
 - [x] Swagger
 - [x] Category Controller
-- [ ] Product Controller
-- [ ] Supplier Controller
-- [ ] StockMovement Controller
+- [x] Product Controller
+- [x] Supplier Controller
+- [x] StockMovement Controller
 - [ ] Global Exception Middleware
 - [ ] API Versioning
 - [ ] Rate Limiting
@@ -208,9 +209,9 @@ Frontend development will start after the backend reaches feature completeness.
 
 - [x] Category Management
 - [x] Product Management
-- [ ] Supplier Management
-- [ ] Inventory Movements
-- [ ] Inventory Control
+- [x] Supplier Management
+- [x] Inventory Movements
+- [x] Inventory Control
 - [ ] Dashboard
 - [ ] Reports
 - [ ] Authentication & Authorization
@@ -241,7 +242,7 @@ Frontend development will start after the backend reaches feature completeness.
 
 ## 🧪 Testing
 
-- [ ] Unit Tests
+- [x] Unit Tests
 - [ ] Integration Tests
 - [ ] Contract Tests
 - [ ] End-to-End Tests
