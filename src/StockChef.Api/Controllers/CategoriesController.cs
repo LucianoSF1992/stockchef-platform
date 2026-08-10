@@ -26,6 +26,18 @@ public class CategoriesController : ControllerBase
         return Ok(result);
     }
 
+    [HttpGet("{id:guid}")]
+    public async Task<ActionResult<CategoryDto>> GetById(Guid id)
+    {
+        var category = await _mediator.Send(
+            new GetCategoryByIdQuery(id));
+
+        if (category is null)
+            return NotFound();
+
+        return Ok(category);
+    }
+
     [HttpPost]
     public async Task<ActionResult<Guid>> Create(
         CreateCategoryDto dto)
@@ -34,8 +46,34 @@ public class CategoriesController : ControllerBase
             new CreateCategoryCommand(dto));
 
         return CreatedAtAction(
-            nameof(GetAll),
+            nameof(GetById),
             new { id },
             id);
+    }
+
+    [HttpPut("{id:guid}")]
+    public async Task<IActionResult> Update(
+        Guid id,
+        UpdateCategoryDto dto)
+    {
+        var updated = await _mediator.Send(
+            new UpdateCategoryCommand(id, dto));
+
+        if (!updated)
+            return NotFound();
+
+        return NoContent();
+    }
+
+    [HttpDelete("{id:guid}")]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        var deleted = await _mediator.Send(
+            new DeleteCategoryCommand(id));
+
+        if (!deleted)
+            return NotFound();
+
+        return NoContent();
     }
 }
