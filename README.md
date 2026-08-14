@@ -198,7 +198,7 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] Product Controller
 - [x] Supplier Controller
 - [x] StockMovement Controller
-- [ ] Global Exception Middleware
+- [X] Global Exception Middleware
 - [ ] API Versioning
 - [ ] Rate Limiting
 - [ ] Health Checks

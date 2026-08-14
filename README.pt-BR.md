@@ -208,7 +208,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] ProductController
 - [x] SupplierController
 - [x] StockMovementController
-- [ ] Middleware Global de Exceções
+- [X] Middleware Global de Exceções
 - [ ] Versionamento da API
 - [ ] Rate Limiting
 - [ ] Health Checks
