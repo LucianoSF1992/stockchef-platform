@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using StockChef.Application.Behaviors;
 using StockChef.Application.Features.Categories.Commands;
 using StockChef.Infrastructure;
 using StockChef.Infrastructure.Persistence;
@@ -25,6 +26,11 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(
         typeof(CreateCategoryCommand).Assembly);
 });
+
+// MediatR Pipeline Behaviors
+builder.Services.AddTransient(
+    typeof(IPipelineBehavior<,>),
+    typeof(ValidationBehavior<,>));
 
 // Controllers
 builder.Services.AddControllers();
