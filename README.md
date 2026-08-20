@@ -144,6 +144,7 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] Commands
 - [x] Queries
 - [x] Handlers
+- [x] Validators
 
 ### Suppliers
 
@@ -151,6 +152,7 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] Commands
 - [x] Queries
 - [x] Handlers
+- [x] Validators
 
 ### Stock Movements
 
@@ -158,12 +160,13 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] Commands
 - [x] Queries
 - [x] Handlers
+- [x] Validators
 
 ### Cross-Cutting
 
 - [x] Dependency Injection
-- [ ] FluentValidation
-- [ ] MediatR Pipeline Behaviors
+- [x] FluentValidation
+- [x] MediatR Pipeline Behaviors
 - [ ] AutoMapper
 
 ---
@@ -198,7 +201,7 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] Product Controller
 - [x] Supplier Controller
 - [x] StockMovement Controller
-- [X] Global Exception Middleware
+- [x] Global Exception Handler
 - [ ] API Versioning
 - [ ] Rate Limiting
 - [ ] Health Checks
@@ -242,7 +245,7 @@ Frontend development will start after the backend reaches feature completeness.
 
 ## 🧪 Testing
 
-- [x] Unit Tests
+- [ ] Unit Tests
 - [ ] Integration Tests
 - [ ] Contract Tests
 - [ ] End-to-End Tests
@@ -259,8 +262,6 @@ Frontend development will start after the backend reaches feature completeness.
 - [ ] Cloud Deployment
 - [ ] Monitoring
 - [ ] Observability
-
----
 
 # Deployment
 
