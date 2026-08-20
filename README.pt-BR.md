@@ -154,6 +154,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] Commands
 - [x] Queries
 - [x] Handlers
+- [x] Validadores
 
 ### Fornecedores
 
@@ -161,6 +162,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] Commands
 - [x] Queries
 - [x] Handlers
+- [x] Validadores
 
 ### Movimentações de Estoque
 
@@ -168,12 +170,13 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] Commands
 - [x] Queries
 - [x] Handlers
+- [x] Validadores
 
 ### Componentes Compartilhados
 
 - [x] Configuração de Injeção de Dependência
-- [ ] FluentValidation
-- [ ] Pipeline Behaviors do MediatR
+- [x] FluentValidation
+- [x] Pipeline Behaviors do MediatR
 - [ ] AutoMapper
 
 ---
@@ -208,7 +211,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] ProductController
 - [x] SupplierController
 - [x] StockMovementController
-- [X] Middleware Global de Exceções
+- [x] Middleware Global de Exceções
 - [ ] Versionamento da API
 - [ ] Rate Limiting
 - [ ] Health Checks
@@ -252,7 +255,8 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 
 ## 🧪 Qualidade
 
-- [x] Testes Unitários
+- [x] Estrutura de Testes Unitários
+- [ ] Testes Unitários dos módulos
 - [ ] Testes de Integração
 - [ ] Testes de Contrato
 - [ ] Testes End-to-End
@@ -269,7 +273,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [ ] Deploy em Nuvem
 - [ ] Monitoramento
 - [ ] Observabilidade
-
+  
 ---
 
 # Deploy
