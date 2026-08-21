@@ -1,9 +1,11 @@
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using StockChef.Domain.Entities;
+using StockChef.Infrastructure.Identity;
 
 namespace StockChef.Infrastructure.Persistence;
 
-public class StockChefDbContext : DbContext
+public class StockChefDbContext : IdentityDbContext<ApplicationUser>
 {
     public StockChefDbContext(DbContextOptions<StockChefDbContext> options)
         : base(options)
@@ -20,9 +22,9 @@ public class StockChefDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+
         modelBuilder.ApplyConfigurationsFromAssembly(
             typeof(StockChefDbContext).Assembly);
-
-        base.OnModelCreating(modelBuilder);
     }
 }

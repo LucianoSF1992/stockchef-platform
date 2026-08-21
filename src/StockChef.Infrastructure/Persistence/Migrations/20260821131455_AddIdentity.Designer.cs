@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StockChef.Infrastructure.Persistence;
 
@@ -11,9 +12,11 @@ using StockChef.Infrastructure.Persistence;
 namespace StockChef.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(StockChefDbContext))]
-    partial class StockChefDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260821131455_AddIdentity")]
+    partial class AddIdentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -217,6 +217,7 @@ Frontend development will start after the backend reaches feature completeness.
 - [x] Inventory Control
 - [ ] Dashboard
 - [ ] Reports
+- [x] Identity infrastructure
 - [ ] Authentication & Authorization
 - [ ] Low Stock Alerts
 - [ ] Audit Trail

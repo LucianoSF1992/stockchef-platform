@@ -227,6 +227,7 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 - [x] Controle de Estoque
 - [ ] Dashboard
 - [ ] Relatórios
+- [x] Estrutura de Identity
 - [ ] Autenticação e Autorização
 - [ ] Alertas de Estoque Baixo
 - [ ] Auditoria
