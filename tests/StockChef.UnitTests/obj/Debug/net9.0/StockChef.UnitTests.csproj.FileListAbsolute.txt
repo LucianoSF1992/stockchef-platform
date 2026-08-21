@@ -97,3 +97,13 @@ C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\sto
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.pdb
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\StockChef.UnitTests.genruntimeconfig.cache
 C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\obj\Debug\net9.0\ref\StockChef.UnitTests.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_StockChef.UnitTests
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\CoverletSourceRootsMapping_StockChef.UnitTests
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\MediatR.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\MediatR.Contracts.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\StockChef.Application.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\StockChef.Domain.dll
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\StockChef.Application.pdb
+C:\Users\lucia\OneDrive\Cursos\Curso Meu Sistema Lucrativo\Projetos Pessoais\stockchef-platform\tests\StockChef.UnitTests\bin\Debug\net9.0\StockChef.Domain.pdb

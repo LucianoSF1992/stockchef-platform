@@ -68,9 +68,41 @@ public class Product : BaseEntity
         CurrentStock = 0;
     }
 
+    public void UpdateDetails(
+        string name,
+        string sku,
+        UnitOfMeasure unitOfMeasure,
+        decimal minimumStock,
+        decimal costPrice,
+        decimal salePrice,
+        Guid categoryId,
+        Guid supplierId,
+        string? description = null)
+    {
+        SetName(name);
+        SetSku(sku);
+
+        if (minimumStock < 0)
+            throw new ArgumentException("Minimum stock cannot be negative.");
+
+        if (costPrice < 0)
+            throw new ArgumentException("Cost price cannot be negative.");
+
+        if (salePrice < 0)
+            throw new ArgumentException("Sale price cannot be negative.");
+
+        UnitOfMeasure = unitOfMeasure;
+        MinimumStock = minimumStock;
+        CostPrice = costPrice;
+        SalePrice = salePrice;
+        CategoryId = categoryId;
+        SupplierId = supplierId;
+        Description = description;
+    }
+
     public void ApplyStockMovement(
-    StockMovementType type,
-    decimal quantity)
+        StockMovementType type,
+        decimal quantity)
     {
         if (quantity <= 0)
             throw new ArgumentException(

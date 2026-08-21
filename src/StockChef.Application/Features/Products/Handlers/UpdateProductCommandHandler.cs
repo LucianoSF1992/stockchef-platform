@@ -22,10 +22,19 @@ public class UpdateProductCommandHandler
         var product = await _repository.GetByIdAsync(request.Id);
 
         if (product is null)
-            throw new Exception("Produto não encontrado.");
+            throw new KeyNotFoundException(
+                "Produto não encontrado.");
 
-        // A implementação da atualização da entidade será feita
-        // posteriormente, quando criarmos os métodos de domínio.
+        product.UpdateDetails(
+            request.Product.Name,
+            request.Product.Sku,
+            request.Product.UnitOfMeasure,
+            request.Product.MinimumStock,
+            request.Product.CostPrice,
+            request.Product.SalePrice,
+            request.Product.CategoryId,
+            request.Product.SupplierId,
+            request.Product.Description);
 
         await _repository.UpdateAsync(product);
     }
