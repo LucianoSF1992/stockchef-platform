@@ -1,4 +1,5 @@
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StockChef.Application.DTOs.Suppliers;
 using StockChef.Application.Features.Suppliers.Commands;
@@ -8,6 +9,7 @@ namespace StockChef.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class SuppliersController : ControllerBase
 {
     private readonly IMediator _mediator;
