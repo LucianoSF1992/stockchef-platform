@@ -3,6 +3,7 @@ using StockChef.Application.Interfaces;
 using StockChef.Infrastructure.Identity;
 using StockChef.Infrastructure.Persistence;
 using StockChef.Infrastructure.Repositories;
+using StockChef.Infrastructure.Services;
 
 namespace StockChef.Infrastructure;
 
@@ -15,6 +16,7 @@ public static class DependencyInjection
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<ISupplierRepository, SupplierRepository>();
         services.AddScoped<IStockMovementRepository, StockMovementRepository>();
+        services.AddScoped<IAuthService, AuthService>();
 
         services.AddIdentityCore<ApplicationUser>(options =>
         {
