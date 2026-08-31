@@ -236,8 +236,8 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 
 ## 🖥 Frontend Web (Angular)
 
-- [ ] Projeto Angular
-- [ ] Angular Material
+- [X] Projeto Angular
+- [X] Angular Material
 - [ ] Layout Responsivo
 - [ ] Tela de Login
 - [ ] Dashboard

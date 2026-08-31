@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 
 import { Auth } from '../../services/auth';
+import { AuthStorage } from '../../../../core/services/auth-storage';
 
 @Component({
   selector: 'app-login',
@@ -30,6 +31,7 @@ import { Auth } from '../../services/auth';
 export class Login {
   private readonly formBuilder = inject(FormBuilder);
   private readonly auth = inject(Auth);
+  private readonly authStorage = inject(AuthStorage);
   private readonly router = inject(Router);
 
   protected readonly loginForm = this.formBuilder.nonNullable.group({
@@ -51,7 +53,7 @@ export class Login {
 
     this.auth.login(credentials).subscribe({
       next: (response) => {
-        console.log('Login realizado com sucesso:', response);
+        this.authStorage.save(response);
 
         this.isLoading = false;
 

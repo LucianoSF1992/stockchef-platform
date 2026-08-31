@@ -226,8 +226,8 @@ Frontend development will start after the backend reaches feature completeness.
 
 ## 🖥 Angular Frontend
 
-- [ ] Angular Project
-- [ ] Angular Material
+- [X] Angular Project
+- [X] Angular Material
 - [ ] Responsive Layout
 - [ ] Login
 - [ ] Dashboard
