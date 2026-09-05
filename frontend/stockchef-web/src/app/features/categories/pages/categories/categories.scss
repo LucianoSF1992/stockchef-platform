@@ -1,0 +1,39 @@
+.categories-container {
+    padding: 24px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    margin: 0;
+}
+
+.page-header p {
+    margin: 8px 0 0;
+    color: #666;
+}
+
+.categories-table {
+    width: 100%;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 48px;
+}
+
+.error-message {
+    padding: 16px;
+    border-radius: 4px;
+}
