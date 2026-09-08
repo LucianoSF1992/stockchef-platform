@@ -427,3 +427,17 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Build artifacts .NET
+**/bin/
+**/obj/
+
+# Angular
+node_modules/
+.angular/
+dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
