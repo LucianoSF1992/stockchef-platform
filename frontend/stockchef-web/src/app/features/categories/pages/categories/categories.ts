@@ -1,12 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
+
 import { CategoriesService } from '../../services/categories';
 import { Category } from '../../models/category.model';
 
 @Component({
   selector: 'app-categories',
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    MatProgressSpinnerModule,
+    MatTableModule,
+  ],
   templateUrl: './categories.html',
   styleUrl: './categories.scss',
 })
