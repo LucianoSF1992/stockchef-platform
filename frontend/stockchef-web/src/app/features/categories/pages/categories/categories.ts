@@ -19,6 +19,14 @@ import { Category } from '../../models/category.model';
 })
 export class Categories implements OnInit {
   categories: Category[] = [];
+
+  protected readonly displayedColumns = [
+    'name',
+    'description',
+    'isActive',
+    'actions',
+  ];
+
   isLoading = false;
   errorMessage = '';
 

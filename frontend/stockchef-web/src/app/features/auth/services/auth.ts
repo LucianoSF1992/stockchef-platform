@@ -13,7 +13,7 @@ export class Auth {
   private readonly http = inject(HttpClient);
   private readonly authStorage = inject(AuthStorage);
 
-  private readonly apiUrl = 'https://localhost:7059/api/Auth';
+  private readonly apiUrl = 'http://localhost:5009/api/Auth';
 
   login(request: LoginRequest): Observable<AuthResponse> {
     return this.http
