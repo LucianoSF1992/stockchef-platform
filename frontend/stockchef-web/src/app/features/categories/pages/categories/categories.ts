@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
 
@@ -11,6 +12,7 @@ import { Category } from '../../models/category.model';
   selector: 'app-categories',
   imports: [
     CommonModule,
+    MatButtonModule,
     MatProgressSpinnerModule,
     MatTableModule,
   ],
@@ -18,17 +20,16 @@ import { Category } from '../../models/category.model';
   styleUrl: './categories.scss',
 })
 export class Categories implements OnInit {
-  categories: Category[] = [];
+  protected readonly categories = signal<Category[]>([]);
 
   protected readonly displayedColumns = [
     'name',
     'description',
-    'isActive',
-    'actions',
+    'status',
   ];
 
-  isLoading = false;
-  errorMessage = '';
+  protected readonly isLoading = signal(false);
+  protected readonly errorMessage = signal('');
 
   constructor(private readonly categoriesService: CategoriesService) { }
 
@@ -36,22 +37,23 @@ export class Categories implements OnInit {
     this.loadCategories();
   }
 
-  loadCategories(): void {
-    this.isLoading = true;
-    this.errorMessage = '';
+  protected loadCategories(): void {
+    this.isLoading.set(true);
+    this.errorMessage.set('');
 
     this.categoriesService.getAll().subscribe({
       next: (categories) => {
-        this.categories = categories;
-        this.isLoading = false;
+        this.categories.set(categories);
+        this.isLoading.set(false);
       },
       error: (error) => {
         console.error('Erro ao carregar categorias:', error);
 
-        this.errorMessage =
-          'Não foi possível carregar as categorias.';
+        this.errorMessage.set(
+          'Não foi possível carregar as categorias.'
+        );
 
-        this.isLoading = false;
+        this.isLoading.set(false);
       },
     });
   }

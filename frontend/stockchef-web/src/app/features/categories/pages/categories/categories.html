@@ -11,15 +11,15 @@
         </button>
     </div>
 
-    @if (isLoading) {
+    @if (isLoading()) {
     <div class="loading-container">
         <mat-spinner diameter="40"></mat-spinner>
     </div>
     }
 
-    @if (errorMessage) {
+    @if (errorMessage()) {
     <div class="error-message">
-        {{ errorMessage }}
+        {{ errorMessage() }}
 
         <button mat-button (click)="loadCategories()">
             Tentar novamente
@@ -27,9 +27,9 @@
     </div>
     }
 
-    @if (!isLoading && !errorMessage) {
+    @if (!isLoading() && !errorMessage()) {
 
-    @if (categories.length === 0) {
+    @if (categories().length === 0) {
     <div class="empty-state">
         <h2>Nenhuma categoria cadastrada</h2>
 
@@ -39,8 +39,8 @@
     </div>
     }
 
-    @if (categories.length > 0) {
-    <table mat-table [dataSource]="categories" class="categories-table">
+    @if (categories().length > 0) {
+    <table mat-table [dataSource]="categories()" class="categories-table">
 
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef>
