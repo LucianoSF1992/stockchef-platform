@@ -1,0 +1,47 @@
+<div class="category-form">
+    <h2>Nova Categoria</h2>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nome</mat-label>
+
+            <input matInput formControlName="name" placeholder="Ex.: Bebidas" />
+
+            @if (form.controls.name.hasError('required')) {
+            <mat-error>
+                O nome é obrigatório.
+            </mat-error>
+            }
+
+            @if (form.controls.name.hasError('maxlength')) {
+            <mat-error>
+                O nome deve ter no máximo 100 caracteres.
+            </mat-error>
+            }
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Descrição</mat-label>
+
+            <textarea matInput formControlName="description" rows="4" placeholder="Descreva a categoria"></textarea>
+
+            @if (form.controls.description.hasError('maxlength')) {
+            <mat-error>
+                A descrição deve ter no máximo 500 caracteres.
+            </mat-error>
+            }
+        </mat-form-field>
+
+        <div class="form-actions">
+            <button mat-button type="button" (click)="onCancel()">
+                Cancelar
+            </button>
+
+            <button mat-raised-button color="primary" type="submit">
+                Salvar
+            </button>
+        </div>
+
+    </form>
+</div>
