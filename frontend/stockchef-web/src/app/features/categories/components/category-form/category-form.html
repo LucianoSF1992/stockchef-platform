@@ -1,5 +1,5 @@
 <div class="category-form">
-    <h2>Nova Categoria</h2>
+    <h2>{{ isEditing ? 'Editar Categoria' : 'Nova Categoria' }}</h2>
 
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
