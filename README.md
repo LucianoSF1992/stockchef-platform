@@ -85,18 +85,24 @@ The application allows restaurants to manage products, suppliers, categories and
 
 ---
 
-# Project Status
+## Project Status
 
 🚧 Under Development
 
-Current focus:
+### Completed
+- Backend authentication and authorization
+- JWT-based authentication
+- Category management API
+- Angular authentication flow
+- Protected routes and HTTP interceptor
+- Category listing, creation, editing and deletion
 
-- Backend API
-- Domain Modeling
-- CQRS Implementation
-- Repository Pattern
-
-Frontend development will start after the backend reaches feature completeness.
+### Current Focus
+- Product management
+- Supplier management
+- Inventory movements
+- Automated testing
+- Production readiness
 
 ---
 
@@ -228,17 +234,17 @@ Frontend development will start after the backend reaches feature completeness.
 
 - [X] Angular Project
 - [X] Angular Material
-- [ ] Responsive Layout
-- [ ] Login
+- [X] Responsive Layout
+- [X] Login
 - [ ] Dashboard
 - [ ] Products
-- [ ] Categories
+- [X] Categories
 - [ ] Suppliers
 - [ ] Inventory
 - [ ] Reports
-- [ ] JWT Integration
-- [ ] Guards
-- [ ] Interceptors
+- [X] JWT Integration
+- [X] Guards
+- [X] Interceptors
 - [ ] State Management
 - [ ] Internationalization (PT-BR / EN / ES)
 

@@ -95,18 +95,24 @@ tests/
 
 ---
 
-# Status do Projeto
+## Status do Projeto
 
-🚧 Em desenvolvimento
+🚧 Em Desenvolvimento
 
-**Foco atual:**
+### Concluído
+- Autenticação e autorização no backend
+- Autenticação baseada em JWT
+- API de gerenciamento de categorias
+- Fluxo de autenticação no Angular
+- Rotas protegidas e interceptor HTTP
+- Listagem, criação, edição e exclusão de categorias
 
-- Desenvolvimento da API
-- Modelagem de Domínio
-- Implementação de CQRS
-- Repository Pattern
-
-O frontend em Angular será iniciado após a conclusão das principais funcionalidades da API.
+### Foco Atual
+- Gerenciamento de produtos
+- Gerenciamento de fornecedores
+- Movimentações de estoque
+- Testes automatizados
+- Preparação para produção
 
 ---
 
@@ -238,17 +244,17 @@ O frontend em Angular será iniciado após a conclusão das principais funcional
 
 - [X] Projeto Angular
 - [X] Angular Material
-- [ ] Layout Responsivo
-- [ ] Tela de Login
+- [X] Layout Responsivo
+- [X] Tela de Login
 - [ ] Dashboard
 - [ ] Gestão de Produtos
-- [ ] Gestão de Categorias
+- [X] Gestão de Categorias
 - [ ] Gestão de Fornecedores
 - [ ] Movimentações de Estoque
 - [ ] Relatórios
-- [ ] Integração com JWT
-- [ ] Guards
-- [ ] Interceptors
+- [X] Integração com JWT
+- [X] Guards
+- [X] Interceptors
 - [ ] Gerenciamento de Estado
 - [ ] Internacionalização (PT-BR / EN / ES)
 
