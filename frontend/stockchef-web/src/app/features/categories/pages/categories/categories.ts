@@ -137,4 +137,32 @@ export class Categories implements OnInit {
         },
       });
   }
+
+  protected deleteCategory(category: Category): void {
+    const confirmed = window.confirm(
+      `Deseja realmente excluir a categoria "${category.name}"?`
+    );
+
+    if (!confirmed) {
+      return;
+    }
+
+    this.isLoading.set(true);
+    this.errorMessage.set('');
+
+    this.categoriesService.delete(category.id).subscribe({
+      next: () => {
+        this.loadCategories();
+      },
+      error: (error) => {
+        console.error('Erro ao excluir categoria:', error);
+
+        this.errorMessage.set(
+          'Não foi possível excluir a categoria.'
+        );
+
+        this.isLoading.set(false);
+      },
+    });
+  }
 }
